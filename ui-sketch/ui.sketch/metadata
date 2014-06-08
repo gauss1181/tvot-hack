@@ -13,6 +13,7 @@
 		<string>HelveticaNeue</string>
 		<string>HelveticaNeue-Medium</string>
 		<string>HelveticaNeue-MediumItalic</string>
+		<string>HelveticaNeue-Thin</string>
 		<string>Helvetica</string>
 		<string>HelveticaNeue-LightItalic</string>
 		<string>GillSans</string>
@@ -20,7 +21,7 @@
 		<string>HelveticaNeue-Light</string>
 	</array>
 	<key>length</key>
-	<integer>8970074</integer>
+	<integer>8999577</integer>
 	<key>version</key>
 	<integer>37</integer>
 </dict>
