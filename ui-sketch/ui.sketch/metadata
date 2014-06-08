@@ -12,13 +12,15 @@
 	<array>
 		<string>HelveticaNeue</string>
 		<string>HelveticaNeue-Medium</string>
+		<string>Helvetica</string>
+		<string>HelveticaNeue-LightItalic</string>
 		<string>HelveticaNeue-MediumItalic</string>
 		<string>GillSans</string>
 		<string>HelveticaNeue-BoldItalic</string>
 		<string>HelveticaNeue-Light</string>
 	</array>
 	<key>length</key>
-	<integer>7760909</integer>
+	<integer>7777913</integer>
 	<key>version</key>
 	<integer>37</integer>
 </dict>
