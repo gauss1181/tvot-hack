@@ -1,0 +1,1813 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<title>Entourage SDK Data Dictionary (1.5)</title>
+
+
+<style type="text/css">
+body {background:#fff;border:0;font:14px Arial, Helvetica, sans-serif;color:#444444;line-height:18px;max-width:90%;min-width:960px;margin:20px}
+a {color:#1d8bce;text-decoration:underline;outline:none}
+a:hover {text-decoration:none}
+h1 {font-size:30px;line-height:40px;padding-left:0px;color:#666666}
+h2 {font-size:24px;line-height:30px;color:#666666;padding:8px 0 6px 0}
+h3 {font-size:18px;line-height:18px;;color:#666666;padding:0px 0 0px 0}
+h4 {font-size:16px;line-height:16px;;color:#666666;}
+p {padding-bottom:0px}
+table,td { border : 1px solid #CCC; border-collapse : collapse; font: small/1.5 "Tahoma", "Bitstream Vera Sans", Verdana, Helvetica, sans-serif;}
+table { border :none; border :1px solid #CCC;}
+thead th, tbody th { background : #D8D8D8 url(th_bck.gif) repeat-x; color : #666; padding: 5px 10px; border-left: 1px solid #CCC;}
+tbody th {background : #fafafb; border-top: 1px solid #CCC; text-align: left; font-weight: normal;}
+tbody tr td { padding : 5px 10px; color : #666;}
+tbody tr:hover { background : #FFFFCC url(tr_bck.gif) repeat;}
+tbody tr:hover td { color : #454545; }
+tfoot td, tfoot th { border-left : none; border-top : 1px solid #CCC; padding : 4px; background : #FFF url(foot_bck.gif) repeat; color : #666;}
+caption {text-align : left; font-size : 120%; padding : 10px 0; color  : #666;}
+table a:link {color : #666;}
+table a:visited {color : #666;}
+table a:hover { color : #003366; text-decoration : none;}
+table a:active {color : #003366;}
+pre { font-size: 11px; padding: 5; margin: 20px; background: #f0f0f0; border-left: 0px solid #ccc; line-height: 20px; background: beige; width: 820px; overflow: auto; overflow-Y:hidden; color:#444444;}
+table { border:1px solid #CCC; padding:5px; background-color:#D8D8D8;}
+th {background-color : #F0F0F0; color:#003366; padding:10px; text-align:center;}
+tbody tr td { padding:10px; color:#666; background-color : #fafafb; text-align:left;}
+.pad1 { padding-left:30px;}
+.pad2 { padding-left:60px;}
+.pad3 { padding-left:90px;}
+.pad4 { padding-left:120px;}
+.pad5 { padding-left:150px;}
+
+code {
+   font-size: 12px;
+   font-family: "Courier New", Courier;
+
+ }
+
+code.object {
+  border: 1px solid #CCCCCC;
+  white-space:pre-wrap;
+  padding:0px;
+  font-family: "Courier New", Courier;
+  background-color: #F1EDB6;
+  color:black;
+ }
+
+ tbody tr:nth-child(odd) {
+   background-color: salmon;
+}
+</style>
+
+<script language="javascript">
+var ary1 = ['acrF1', 'acrF2', 'acrF3', 'acrF4', 'acrF5', 'acrF6', 'acrF7', 'acrF8'];
+var ary2 = ['vwF1', 'vwF3', 'vwF4', 'vwF5', 'vwF6', 'vwF7', 'vwF8', 'vwF9', 'vwF10', 'vwF11', 'vwF12', 'vwF13', 'vwF14', 'vwF15', 'vwF16', 'vwF17', 'vwF18', 'vwF19', 'vwF20', 'vwF21', 'vwF22', 'vwF23', 'vwF24', 'vwF25', 'vwF26', 'vwF27', 'vwF28', 'vwF29', 'vwF30', 'vwF31', 'vwF32', 'vwF33', 'vwF34', 'vwF35', 'vwF36', 'vwF37', 'vwF38', 'vwF39', 'vwF40', 'vwF41', 'vwF42', 'vwF43', 'vwF44', 'vwF45', 'vwF46', 'vwF47'];
+var ary3 = ['vcF1', 'vcF2', 'vcF3', 'vcF4', 'vcF5', 'vcF6', 'vcF7', 'vcF8'];
+var ary4 = ['vcoF1', 'vcoF2', 'vcoF3', 'vcoF4', 'vcoF5', 'vcoF6', 'vcoF8', 'vcoF9', 'vcoF10', 'vcoF11', 'vcoF12', 'vcoF13', 'vcoF14', 'vcoF15', 'vcoF16', 'vcoF17', 'vcoF18', 'vcoF19', 'vco20'];
+var ary5 = ['vnF1', 'vnF2', 'vnF3', 'vnF4', 'vnF5', 'vnF6'];
+var ary6 = ['eiF1', 'eiF2', 'eiF3'];
+var ary7 = ['g1', 'g2', 'g3'];
+var ary8 = ['vsF1', 'vsF2', 'vsF3', 'vsF4', 'vsF5', 'vsF6', 'vsF7', 'vsF8', 'vsF9', 'vsF10', 'vsF11', 'vsF12', 'vsF13', 'vsF14', 'vsF15', 'vsF16', 'vsF17', 'vsF18', 'vsF19', 'vsF20', 'vsF21', 'vsF22', 'vsF23', 'vsF24', 'vsF25', 'vsF26', 'vsF27', 'vsF28', 'vsF29', 'vsF30', 'vsF31', 'vsF32', 'vsF33', 'vsF34', 'vsF35', 'vsF36', 'vsF37', 'vsF38', 'vsF39'];
+var ary9 = ['tvaF1', 'tvaF2', 'tvaF3', 'tvaF4', 'tvaF5', 'tvaF6'];
+var ary10 = ['tvcF1', 'tvcF2', 'tvcF3', 'tvcF4', 'tvcF5', 'tvcF6', 'tvcF7', 'tvcF8', 'tvcF9', 'tvcF10'];
+var ary11 = ['tvpF1', 'tvpF2', 'tvpF3', 'tvpF4', 'tvpF5', 'tvpF6', 'tvpF7', 'tvpF8'];
+var ary13 = ['ratF1', 'ratF2', 'ratF3', 'ratF4'];
+var ary14 = ['plF1', 'plF2'];
+var ary15 = ['vtF1', 'vtF2', 'vtF3', 'vtF4', 'vtF5'];
+var ary16 = ['vsrF1', 'vsrF3', 'vsrF4', 'vsrF5', 'vsrF6', 'vsrF7', 'vsrF8', 'vsrF9', 'vsrF10', 'vsrF11', 'vsrF12', 'vsrF13', 'vsrF14', 'vsrF15', 'vsrF16', 'vsrF17', 'vsrF18', 'vsrF19', 'vsrF20', 'vsrF21', 'vsrF22', 'vsrF23', 'vsrF24', 'vsrF25', 'vsrF26', 'vsrF27', 'vsrF28', 'vsrF29', 'vsrF30', 'vsrF31', 'vsrF32', 'vsrF33', 'vsrF34', 'vsrF35', 'vsrF36', 'vsrF37'];
+var ary17 = ['prF1', 'prF2', 'prF3', 'prF4', 'prF5', 'prF6', 'prF7', 'prF8', 'prF9', 'prF10', 'prF11', 'prF12', 'prF13', 'prF14', 'prF15', 'prF16', 'prF17', 'prF18', 'prF19', 'prF20', 'prF21', 'prF22'];
+var ary18 = ['vdF1', 'vdF2', 'vdF3', 'vdF4', 'vdF5', 'vdF6', 'vdF7', 'vdF8', 'vdF9'];
+var ary19 = ['vlF1', 'vlF2'];
+var ary20 = ['vlayF1', 'vlayF2', 'vlayF3', 'vlayF4', 'vlayF5', 'vlayF6', 'vlayF7'];
+var ary21 = ['vsideF1', 'vsideF2', 'vsideF3', 'vsideF4'];
+var ary22 = ['vrF1', 'vrF2'];
+var ary23 = ['cd1', 'cd2'];
+var ary24 = ['fr1', 'fr2', 'fr3'];
+
+var hide=1;
+var notHide = 0;
+
+function toggle3(ary, linkID, text, override)
+{
+   var link = document.getElementById(linkID);
+   var ele  = document.getElementById(ary[0]);
+   if (override || ele.style.display == "table-row")
+   {
+      // Collapse
+
+      // display expand object icon
+     link.innerHTML = "<img src='expandFolderIcon2.jpg'><code class='object'>"+text+"</code>";
+
+
+      // hide all rows
+      for (var i = 0; i < ary.length; i++)
+      {
+          ele = document.getElementById(ary[i]);
+          ele.style.display = "none";
+      }
+
+   } // if
+   else // Expand
+   {
+       // display collapse object icon
+       link.innerHTML = "<img src='collapseFolderIcon2.jpg'><code class='object'>"+text+"</code>";
+
+       // show all rows
+       for (var i = 0; i < ary.length; i++)
+       {
+          ele = document.getElementById(ary[i]);
+          ele.style.display = "table-row";
+       }
+
+   } // else
+ } // toggle3
+
+</script>
+
+</head>
+
+<body>
+<img src="gracenote60sLogo.jpg">
+<h1>Entourage SDK Data Dictionary (1.5)</h1>
+<p>Describes the metadata fields returned by a match generated from a recognition or search operation. ACR
+metadata results are returned in a <code>GnResult</code> object.</p>
+
+<h2>GnResult</h2>
+<p>At the top-level, the <code>GnResult</code> object contains a number of properties, but the only relevant one for ACR match
+results is <code>acrMatches</code>.</p>
+<p><strong>NOTES</strong></p>
+<ul>
+<li>The data below has been made generic to encompass results for both Java and iOS apps.</li>
+<li>For iOS developers, the <code>String</code> type would be <code>NSString*</code>, and the Enumerator type would be
+<code>NSEnumerator*</code>.</li>
+<li>Java developers will need to use accessors to retrieve data (see below).</li>
+<li>See the iOS and Android sample apps for metadata parsing examples.</li>
+</ul>
+<h2>Using Accessors to Get Results in Java (Android)</h2>
+<p>As stated previously, parsing metadata results in Java is done through accessors. For example, here is code,
+taken from the Sample App, that does initial parsing of metadata:</p>
+<div style="border:2px;"><pre>
+//** From Android Sample App
+//** File: GracenoteACR.java
+//**
+
+    public void acrResultReady(GnResult result) {
+        try {
+            int nMatch = 0;
+
+            //**
+            //** Access matches at the top level
+            //**
+            GnIterator matches = result.getAcrMatch();
+            while (matches.hasNext()) {
+                IGnAcrMatch match = (IGnAcrMatch)matches.next();
+                String matchPosition = getFormattedPosition(match.getAdjustedPosition());
+
+                //** Get TV Airing object
+                IGnTvAiring airing = match.getTvAiring();
+
+                //** Get TV Channel object
+                IGnTvChannel channel = airing.getChannel();
+
+             ...
+             }
+     }
+</pre>
+<div>
+
+<p>See the <em>Entourage API Reference</em> to see all the accessor methods.</p>
+
+<h2>GnResult.acrMatches</h2>
+<h3>ACR Data Returned</h3>
+<p>For the initial ACR release, the metadata your app is likely to see coming back is confined to the top-level fields
+in the acrMatches object (except for acrMatches.avWork, which will not appear ) . The
+acrMatches.tvAiring object will contain the metadata to identify the live TV program being watched. Video
+Explore (http://www.gracenote.com/products/videoexplore/) (provides access to Gracenote's global database of rich
+video metadata, visual assets, trailers, and commerce links) and EPG (http://www.gracenote.com/products/eyeq/) (
+Electronic Program Guide (http://en.wikipedia.org/wiki/EPG)) queries can be used (depending on licensing) to
+obtain further metadata results.</p>
+
+<h3>Metadata Scope</h3>
+<ul>
+<li>Real-time TV program recognition for North American, European, and other channels</li>
+<li>7 day time-shifted TV program recognition</li>
+<li>Available EPG content for all real-time and time-shifted channels (previous 7 days maximum)</li>
+</ul>
+
+<h3>Key</h3>
+
+
+<ul>
+<li>Properties in a <code class="object">beige</code> box are objects.</li>
+<li>A side arrow (<img src="expandFolderIcon2.jpg">) indicates an unexpanded object (collapsed).</li>
+<li>A down arrow (<img src="collapseFolderIcon2.jpg">) indicates an object whose fields are shown (expanded).</li>
+</ul>
+
+<p><strong>Note:</strong></p>
+<p>Certain metadata fields are considered core, that is, if you are an Entourage customer without any special entitlements or licensing, then this is the data you can expect to see returned. These fields are marked as core (see the description column) in the table below.</p>
+
+<p><strong>PLEASE NOTE!!!</strong></p>
+<p>Below is all the possible ACR metadata in an EXPANDABLE/COLLAPSIBLE, HIERARCHICAL TABLE
+STRUCTURE. This (collapsing/expanding) is true for online viewing, when viewing in a PDF, you will see all the
+fields in one large table.</p>
+<table id="gnresult" width="90%">
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+
+
+ <td style="width:100px;" onClick="javascript:toggle3(ary2, 'avwork', 'avWork', hide);toggle3(ary15, 'title', 'title', hide);toggle3(ary23, 'customdata', 'customData', hide);toggle3(ary9, 'tvairing', 'tvAiring', hide);toggle3(ary10, 'channel', 'channel', hide);toggle3(ary11, 'program', 'tvProgram', hide);toggle3(ary1, 'matches', 'acrMatches', notHide); toggle3(ary6, 'extIDs', 'externalIDs', hide);toggle3(ary21, 'side', 'matchedSide', hide);toggle3(ary22, 'region', 'region', hide);toggle3(ary20, 'layer', 'matchedLayer', hide);toggle3(ary18, 'disc', 'matchedDisc', hide);toggle3(ary19, 'language', 'language', hide);toggle3(ary24, 'franchise', 'franchise', hide);toggle3(ary14, 'plots', 'plots', hide);toggle3(ary3, 'credits', 'credits', hide);toggle3(ary7, 'Genre', 'genre', hide);toggle3(ary17, 'products', 'products', hide);toggle3(ary13, 'ratings', 'ratings', hide);toggle3(ary8, 'seasons', 'seasons', hide);toggle3(ary16, 'series', 'series', hide);toggle3(ary5, 'name', 'nameOfficial', hide);toggle3(ary4, 'contributor', 'contributor', hide);" id="matches"><img src="collapseFolderIcon2.jpg"><code  class="object">acrMatches</code></td>
+<td><code>Enumerator</code></td>
+<td><strong>Core ACR data.</strong><br>A collection of ACR (Audio Content Recognition) objects returned from a query utilizing PCM data that is either passed manually as byte data or automaticalluy acquired from a microphone or other audio source.</td>
+</tr>
+<tr  id="acrF1" style="display:table-row;">
+<td  class="pad1"><code>actualPosition</code></td>
+<td><code>String</code></td>
+<td><strong>Core ACR data.</strong><br>The actual position in the video stream that the fingerprint matched on, relative to the beginning. This is an integer value measuring milliseconds.</td>
+</tr>
+
+<tr id="acrF2" style="display:table-row;">
+<td  class="pad1"><code>adjustedPosition</code></td>
+<td><code>String</code></td>
+<td><strong>Core ACR data.</strong><br>The adjusted position in the video stream that the fingerprint matched
+on, relative to the beginning. This value is the actual position plus the time it took for the
+online lookup and any other delays before the result was given to the
+user. This is an integer value measuring milliseconds.</td>
+</tr>
+
+<tr id="acrF7" style="display:table-row;">
+<td  class="pad1"><code>fingerprintCreationDate</code></td>
+<td><code>String</code></td>
+<td><strong>Core ACR data.</strong><br>The date, in UTC format, that this content was ingested into the Gracenote Service</td>
+</tr>
+
+<tr id="acrF4" style="display:table-row;">
+<td  class="pad1"><code class="object">subtitle</code></td>
+<td><code>GnVideoTitle</code></td>
+<td><strong>Core ACR data.</strong><br>Subtitle of the matched result, e.g., an episode title. See acrMatches &gt; title for object properties.</td>
+</tr>
+
+<tr id="acrF5" style="display:table-row;">
+<td  class="pad1" onClick="javascript:toggle3(ary15, 'title', 'title', notHide);" id="title" ><img src="expandFolderIcon2.jpg"><code class="object">title</code></td>
+<td><code>GnVideoTitle</code></td>
+<td><strong>Core ACR data</strong><br>Title object of the matched result.</td>
+</tr>
+
+<tr id="vtF1" style="display:none;">
+<td  class="pad2"><code>display</code></td>
+<td><code>String</code></td>
+<td>Title display string. The title of the matched content, e.g. "Sienfeld" or "The Office" </td>
+</tr>
+
+<tr id="vtF2" style="display:none;">
+<td  class="pad2"><code>prefix</code></td>
+<td><code>String</code></td>
+<td>Video title prefix, e.g., "The".</td>
+</tr>
+
+<tr id="vtF3" style="display:none;">
+<td  class="pad2"><code>sortable</code></td>
+<td><code>String</code></td>
+<td>&nbsp;</td>
+</tr>
+
+<tr id="vtF4" style="display:none;">
+<td  class="pad2"><code>main</code></td>
+<td><code>String</code></td>
+<td>&nbsp;</td>
+</tr>
+
+<tr id="vtF5" style="display:none;">
+<td  class="pad2"><code>edition</code></td>
+<td><code>String</code></td>
+<td>&nbsp;</td>
+</tr>
+
+ <tr id="acrF6" style="display:table-row;">
+<td  class="pad1" onClick="javascript:toggle3(ary9, 'tvairing', 'tvAiring', notHide);toggle3(ary10, 'channel', 'channel', hide);toggle3(ary11, 'program', 'tvProgram', hide);" id="tvairing" ><img src="expandFolderIcon2.jpg" border="0"><code class="object">tvAiring</code></td>
+<td><code>GnTvAiring</code></td>
+<td><strong>Core ACR data.</strong><br>
+Live TV show airing object. This object is not <code>null</code> if your match came from searching live TV broadcast data. Otherwise, your match came from searching the video archive - check the <code>avWork</code> object below for your results. Talk to Gracenote Professional Services about licensing for video archive and live TV options.
+</td>
+</tr>
+
+<tr id="tvaF2" style="display:none;"><tr id="tvaF1" style="display:none;">
+<td class="pad2"><code>dateStart</code></td>
+<td><code>String</code></td>
+<td><strong>Core ACR data.</strong><br>
+Date and time, in UTC format, when show began airing.</td>
+</tr>
+
+<tr id="tvaF1" style="display:none;"><tr id="tvaF1" style="display:none;">
+<td   class="pad2"><code>dateEnd</code></td>
+<td><code>String</code></td>
+<td><strong>Core ACR data.</strong><br>Date and time, in UTC format, when show stopped airing. </td>
+</tr>
+
+<tr id="tvaF3" style="display:none;">
+<td   class="pad2"><code>duration</code></td>
+<td><code>String</code></td>
+<td><strong>Core ACR data.</strong><br>The airing duration. A string representation of integer time units, e.g. "3600000".</td>
+</tr>
+
+<tr id="tvaF4" style="display:none;">
+<td   class="pad2"><code>durationUnits</code></td>
+<td><code>String</code></td>
+<td><strong>Core ACR data.</strong><br>The duration time units, e.g. "ms" (milliseconds). </td>
+</tr>
+
+ <tr id="tvaF5" style="display:none;">
+<td  class="pad2" onClick="javascript:toggle3(ary10, 'channel', 'channel', notHide);" id="channel" ><code> channel</code></td>
+<td><code>GnTvChannel</code></td>
+<td><strong>Core ACR data.</strong><br>TV channel object.</td>
+</tr>
+
+
+<tr id="tvcF4" style="display:none;">
+<td   class="pad3"><code>callsign</code></td>
+<td><code>String</code></td>
+<td><strong>Core ACR data.</strong><br>Channel call sign, e.g., "KQED".</td>
+</tr>
+
+
+<tr id="tvcF6" style="display:none;">
+<td   class="pad3"><code>ident</code></td>
+<td><code>int</code></td>
+<td>Index into an array of channel identifiers that was passed in an EPG query.</td>
+</tr>
+
+
+<tr id="tvcF3" style="display:none;">
+<td   class="pad3"><code>name</code></td>
+<td><code>String</code></td>
+<td><strong>Core ACR data.</strong><br>Channel name, e.g., "Lifetime HD".</td>
+</tr>
+
+ <tr id="tvcF5" style="display:none;">
+<td   class="pad3"><code>number</code></td>
+<td><code>String</code></td>
+<td>The provider-assigned channel number.</td>
+</tr>
+
+
+<tr id="tvcF7" style="display:none;">
+<td   class="pad3"><code>ONID</code></td>
+<td><code>String</code></td>
+<td>For European Digital Broadcast Networks (DVB), the ONID (Original Network IDentifier) is a unique identifier for the original network that is transmitting the signal.</td>
+</tr>
+
+<tr id="tvcF9" style="display:none;">
+<td   class="pad3"><code>SID</code></td>
+<td><code>String</code></td>
+<td>For European Digital Broadcast Networks (DVB), a SID (Service IDentifier) is specific to every TV channel, it is the unique identifier for a video/audio program within the transponder signal</td>
+</tr>
+
+ <tr id="tvcF8" style="display:none;">
+<td   class="pad3"><code>TSID</code></td>
+<td><code>String</code></td>
+<td>For European Digital Broadcast Networks, a TSID (Transport Stream IDentifier) is a 16-bit unsigned integer in an MPEG-2 transport stream that identifies the network origination source or transmiter, (or both) that provides a particular transport stream or transport streams.
+The MPEG-2 standard leaves the issuance of actual TSIDs to individual MPEG-2 "users". One such user is the Advanced Television Systems Committee (ATSC), another is Digital Video Broadcasting (DVB) and the Society of Cable and Telecommunications Engineers (SCTE) among others.</td>
+</tr>
+
+<tr id="tvcF1" style="display:none;">
+<td   class="pad3"><code>tui</code></td>
+<td><code>String</code></td>
+<td><strong>Core ACR data.</strong><br>A Gracenote acronym for  "title unique identifier". For example: "267348592". This and <code>tuiTag</code> are used for unique identification within the Gracenote service.</td>
+</tr>
+
+<tr id="tvcF2" style="display:none;">
+<td   class="pad3"><code>tuiTag</code></td>
+<td><code>String</code></td>
+<td><strong>Core ACR data.</strong><br>A hashed representation of the <code>tui</code> property. For example: "343DFA0AAF615988C9F4AB1ECB383D00".</td>
+</tr>
+
+<tr id="tvcF10" style="display:none;">
+<td   class="pad3"><code class="object">externalIDs</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoExternalID</code> objects. External IDs are 3rd party IDs used to cross link this metadata to 3rd party services. <br>See <code><strong>acrMatches &gt; avWork &gt; externalIDs</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="tvaF6" style="display:none;">
+<td  class="pad2" style="width:100px;" onClick="javascript:toggle3(ary11, 'program', 'tvProgram', notHide);" id="program">tvProgram</td>
+<td><code>GnTvProgram</code></td>
+<td><strong>Core ACR data.</strong><br>TV program object</td>
+</tr>
+
+<tr id="tvpF1" style="display:none;">
+<td   class="pad3"><code class="object">subtitle</code></td>
+<td><code>GnVideoTitle</code></td>
+<td><strong>Core ACR data.</strong><br>TV program subtitle. See acrMatches &gt; title for object properties.</td>
+</tr>
+
+<tr id="tvpF2" style="display:none;">
+<td   class="pad3"><code class="object">title</code></td>
+<td><code>GnVideoTitle</code></td>
+<td><strong>Core ACR data.</strong><br>TV program title. See acrMatches &gt; title for object properties.</td>
+</tr>
+
+
+<tr id="tvpF3" style="display:none;">
+<td   class="pad3"><code>tui</code></td>
+<td><code>String</code></td>
+<td><strong>Core ACR data.</strong><br>A Gracenote acronym for "title unique identifier". For example: "267348592".  This and <code>tuiTag</code> are used for unique identification within the Gracenote service.</td>
+</tr>
+
+<tr id="tvpF4" style="display:none;">
+<td   class="pad3"><code>tuiTag</code></td>
+<td><code>String</code></td>
+<td><strong>Core ACR data.</strong><br>A hashed representation of the <code>tui</code> property. For example: "343DFA0AAF615988C9F4AB1ECB383D00".</td>
+</tr>
+
+<tr id="tvpF5" style="display:none;">
+<td   class="pad3"><code class="object">avWork</code></td>
+<td><code>GnVideoWork</code></td>
+<td>A video work object. See <code><strong>acrMatches &gt; avWork</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="tvpF6" style="display:none;">
+<td   class="pad3"><code class="object">credits</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoCredit</code> objects. See <code><strong>acrMatches &gt; avWork &gt; credits</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="tvpF7" style="display:none;">
+<td   class="pad3"><code class="object">series</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoSeries</code> objects. See <code><strong>acrMatches &gt; avWork &gt; series</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="tvpF8" style="display:none;">
+<td   class="pad3"><code class="object">externalIDs</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoExternalID</code> objects. External IDs are 3rd party IDs used to cross link this metadata to 3rd party services.<br> See <code><strong>acrMatches &gt; avWork &gt; externalIDs</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="acrF3"  style="display:table-row;">
+<td  class="pad1"  onClick="javascript:toggle3(ary6, 'extIDs', 'externalIDs', hide);toggle3(ary21, 'side', 'matchedSide', hide);toggle3(ary22, 'region', 'region', hide);toggle3(ary20, 'layer', 'matchedLayer', hide);toggle3(ary18, 'disc', 'matchedDisc', hide);toggle3(ary19, 'language', 'language', hide);toggle3(ary24, 'franchise', 'franchise', hide);toggle3(ary14, 'plots', 'plots', hide);toggle3(ary3, 'credits', 'credits', hide);toggle3(ary7, 'Genre', 'genre', hide);toggle3(ary17, 'products', 'products', hide);toggle3(ary13, 'ratings', 'ratings', hide);toggle3(ary8, 'seasons', 'seasons', hide);toggle3(ary16, 'series', 'series', hide);toggle3(ary2, 'avwork', 'avWork', notHide);toggle3(ary5, 'name', 'nameOfficial', hide);toggle3(ary4, 'contributor', 'contributor', hide);" id="avwork" ><img src="expandFolderIcon2.jpg"><code class="object">avWork</code></td>
+<td><code>GnVideoWork</code></td>
+<td>Audio-Video work object. A Work refers to the artistic creation and production of a Film, TV Series, or other form of video content. The same Work can be released on multiple Product formats across territories. For example, The Dark Knight Work can be released on a Blu-ray Product in multiple countries. A TV Series such as Lost is also a Work. Each individual episode comprising the Series is also a unique Work. Although the majority of Works are commercially released as a Product, not all Works have a Product counterpart. For example, a TV episode which airs on TV, but is not released on DVD or Blu-ray is considered a Work to which no Product exists.<br><br>
+This object is not <code>null</code> if your
+ match came from searching the video archive. Otherwise, your match
+ came from searching live TV broadcast data - check the <code>tvAiring</code> object above for your results. Talk to Gracenote Professional Services about licensing for video archive and live TV options.
+</td>
+</tr>
+
+<tr id="vwF1" style="display:none;">
+<td   class="pad2"><code>audience</code></td>
+<td><code>String</code></td>
+<td>A supported audience type for video data, such as "Kids and Family", "African-American", or "Young Adult".  </td>
+</tr>
+
+<tr id="vwF2" style="display:none;">
+<td  class="pad2"><code>dateOriginalRelease</code></td>
+<td><code>String</code></td>
+<td>Release date of the original AV Work (Movie or Episode), in UTC format.</td>
+</tr>
+
+<tr id="vwF3" style="display:none;">
+<td  class="pad2"><code>duration</code></td>
+<td><code>String</code></td>
+<td>Duration of the work. <code>durationUnit</code> indicates the time measurement used (e.g., seconds).</td>
+</tr>
+
+<tr id="vwF4" style="display:none;">
+<td  class="pad2"><code>durationUnits</code></td>
+<td><code>String</code></td>
+<td>The type of duration time measurement, e.g., "SEC" (seconds), "MS" (milliseconds).</td>
+</tr>
+
+<tr id="vwF5" style="display:none;">
+<td  class="pad2"><code>gdoSerialized</code></td>
+<td><code>String</code></td>
+<td>Serialized GDO.</td>
+</tr>
+
+<tr id="vwF6" style="display:none;">
+<td  class="pad2"><code>genre</code></td>
+<td><code>String</code></td>
+<td>Genre - e.g., comedy</td>
+</tr>
+
+<tr id="vwF7" style="display:none;">
+<td  class="pad2"><code>gnID</code></td>
+<td><code>String</code></td>
+<td>Gracenote identifier.</td>
+</tr>
+
+<tr id="vwF8" style="display:none;">
+<td  class="pad2"><code>gnuID</code></td>
+<td><code>String</code></td>
+<td>&nbsp;</td>
+</tr>
+
+<tr id="vwF9" style="display:none;">
+<td  class="pad2"><code>matchedProductTUI</code></td>
+<td><code>String</code></td>
+<td>TUI of matched product. <code>tui</code> is a Gracenote acronym for  "title unique identifier".</td>
+</tr>
+
+<tr id="vwF10" style="display:none;">
+<td  class="pad2"><code>mood</code></td>
+<td><code>String</code></td>
+<td>The work's mood, e.g., "Playful".</td>
+</tr>
+
+<tr id="vwF11" style="display:none;">
+<td  class="pad2"><code>origin1</code></td>
+<td><code>String</code></td>
+<td>Geographic location. For example: "New York City".</td>
+</tr>
+
+<tr id="vwF12" style="display:none;">
+<td  class="pad2"><code>origin2</code></td>
+<td><code>String</code></td>
+<td>Second geographic location. </td>
+</tr>
+
+<tr id="vwF13" style="display:none;">
+<td  class="pad2"><code>origin3</code></td>
+<td><code>String</code></td>
+<td>Third geographic location.</td>
+</tr>
+
+<tr id="vwF14" style="display:none;">
+<td  class="pad2"><code>origin4</code></td>
+<td><code>String</code></td>
+<td>Fourth geographic location.</td>
+</tr>
+
+<tr id="vwF15" style="display:none;">
+<td  class="pad2"><code>productID</code></td>
+<td><code>String</code></td>
+<td>A hashed representation of the <code>tuiTag</code> property.</td>
+</tr>
+
+
+<tr id="vwF16" style="display:none;">
+<td  class="pad2"><code>productionType</code></td>
+<td><code>String</code></td>
+<td>The kind of production for the AV Work, e.g., "Animation", "Documentary", etc.</td>
+</tr>
+
+<tr id="vwF17" style="display:none;">
+<td  class="pad2"><code>reputation</code></td>
+<td><code>String</code></td>
+<td>A supported film reputation type for video data, such as "Classic", "Chick Flick", or "Cult". This is a critical or popular "value" that is assigned to a work, usually long after the work was released, though some works may qualify shortly after release (e.g., "instant classic" or "blockbuster
+release"). </td>
+</tr>
+
+<tr id="vwF18" style="display:none;">
+<td  class="pad2"><code>scenario</code></td>
+<td><code>String</code></td>
+<td>A supported scenario for video data, such as "Action", "Comedy", and "Drama".  </td>
+</tr>
+
+<tr id="vwF19" style="display:none;">
+<td  class="pad2"><code>seasonCount</code></td>
+<td><code>String</code></td>
+<td>The number of seasons.</td>
+</tr>
+
+<tr id="vwF20" style="display:none;">
+<td  class="pad2"><code>seasonEpisode</code></td>
+<td><code>String</code></td>
+<td>The work's episode number in the season.</td>
+</tr>
+
+<tr id="vwF21" style="display:none;">
+<td  class="pad2"><code>seasonEpisodeCount</code></td>
+<td><code>String</code></td>
+<td>The total number of episodes in the season.</td>
+</tr>
+
+<tr id="vwF22" style="display:none;">
+<td  class="pad2"><code>seasonNumber</code></td>
+<td><code>String</code></td>
+<td>The season number.</td>
+</tr>
+
+<tr id="vwF23" style="display:none;">
+<td  class="pad2"><code>serialType</code></td>
+<td><code>String</code></td>
+<td>A supported video serial type, such as a Series or Episode. </td>
+</tr>
+
+
+<tr id="vwF24" style="display:none;">
+<td  class="pad2"><code>seriesEpisode</code></td>
+<td><code>String</code></td>
+<td>The episode's number in the series.</td>
+</tr>
+
+<tr id="vwF25" style="display:none;">
+<td  class="pad2"><code>seriesEpisodeCount</code></td>
+<td><code>String</code></td>
+<td>The number of episodes in the series.</td>
+</tr>
+
+<tr id="vwF26" style="display:none;">
+<td  class="pad2"><code class="object">seriesTitle</code></td>
+<td><code>GnVideoTitle</code></td>
+<td>The series title, e.g., "Mad Men". See acrMatches > title for object properties.</td>
+</tr>
+
+<tr id="vwF27" style="display:none;">
+<td  class="pad2"><code>seriesTitleLanguage</code></td>
+<td><code>String</code></td>
+<td>Language for <code>seriesTitle</code> property. This is a 3-letter language code based on <a href="http://www.loc.gov/standards/iso639-2/php/code_list.php" target="_blank">ISO 639.2</a></td>
+</tr>
+
+<tr id="vwF28" style="display:none;">
+<td  class="pad2"><code>settingEnvironment</code></td>
+<td><code>String</code></td>
+<td>The physical environment captured in the work. These do not refer to specific locations, but rather general (or generic) locations. For example: Prison, High School, Skyscraper, Desert, etc.  </td>
+</tr>
+
+<tr id="vwF29" style="display:none;">
+<td  class="pad2"><code>settingTimePeriod</code></td>
+<td><code>String</code></td>
+<td>A supported historical time setting for video data, such as "Elizabethan Era 1558-1603", or "Jazz Age 1919-1929".</td>
+</tr>
+
+<tr id="vwF30" style="display:none;">
+<td  class="pad2"><code>source</code></td>
+<td><code>String</code></td>
+<td>A supported story concept source for video data, such as "Fairy Tales and Nursery Rhymes". </td>
+</tr>
+
+<tr id="vwF31" style="display:none;">
+<td  class="pad2"><code>storyType</code></td>
+<td><code>String</code></td>
+<td>A supported overall story type for video data, such as "Love Story".</td>
+</tr>
+
+<tr id="vwF32" style="display:none;">
+<td  class="pad2"><code>style</code></td>
+<td><code>String</code></td>
+<td>A supported film style type for video data, such as "Film Noir".</td>
+</tr>
+
+
+<tr id="vwF33" style="display:none;">
+<td  class="pad2"><code>topic</code></td>
+<td><code>String</code></td>
+<td>A supported film topic for video data, such as "Racing" or "Teen Angst". </td>
+</tr>
+
+<tr id="vwF34" style="display:none;">
+<td  class="pad2"><code>tui</code></td>
+<td><code>String</code></td>
+<td>A Gracenote acronym for  "title unique identifier". For example: "267348592". This and <code>tuiTag</code> are used for unique identification within the Gracenote service.</td>
+</tr>
+
+<tr id="vwF35" style="display:none;">
+<td  class="pad2"><code>tuiTag</code></td>
+<td><code>String</code></td>
+<td>A hashed representation for the <code>tui</code> field. For example: "343DFA0AAF615988C9F4AB1ECB383D00".</td>
+</tr>
+
+<tr id="vwF36" style="display:none;">
+<td  class="pad2"><code>isPartial</code></td>
+<td><code>BOOL</code></td>
+<td>Indicates if this is a partial record. A full record would contain sub-objects. Since objects can refer to the type of object that is also referencing them, the results returned could potentially be infinite and, so, needs to be restricted at some point.</td>
+</tr>
+
+<tr id="vwF37" style="display:none;">
+<td  class="pad2"><code>workType</code></td>
+<td><code>String</code></td>
+<td>A supported work type for video data, such as "Musical" or "Image". </td>
+</tr>
+
+
+<tr id="vwF38" style="display:none;">
+<td  class="pad2" onClick="javascript:toggle3(ary3, 'credits', 'credits', notHide);toggle3(ary4, 'contributor', 'contributor', hide);toggle3(ary5, 'name', 'nameOfficial', hide);toggle3(ary6, 'extIDs', 'externalIDs', hide);toggle3(ary8, 'seasons', 'seasons', hide);" id="credits" ><code> credits</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoCredit</code> object.</td>
+</tr>
+
+<tr id="vcF1" style="display:none;">
+<td  class="pad3"><code>characterName</code></td>
+<td><code>String</code></td>
+<td>The character's name on the show.</td>
+</tr>
+
+<tr id="vcF2" style="display:none;">
+<td  class="pad3"><code>role</code></td>
+<td><code>String</code></td>
+<td>The type of role, e.g., "Actor".</td>
+</tr>
+
+<tr id="vcF3" style="display:none;">
+<td  class="pad3"><code>roleBilling</code></td>
+<td><code>String</code></td>
+<td>A number identifying the role's listing in the credits.</td>
+</tr>
+
+<tr id="vcF4" style="display:none;">
+<td  class="pad3"><code>roleCategory</code></td>
+<td><code>String</code></td>
+<td>Category of role - Acting, Support, etc.</td>
+</tr>
+
+<tr id="vcF5" style="display:none;">
+<td  class="pad3" style="width:120px;" onClick="javascript:toggle3(ary5, 'name', 'nameOfficial', hide);toggle3(ary4, 'contributor', 'contributor', notHide);" id="contributor" ><code> contributor</code></td>
+<td><code>GnVideoContributor</code></td>
+<td>A Contributor refers to any person who plays a role in a Work. Actors, Directors, Producers, Narrators, and Crew are all consider a Contributor. Popular recurring Characters such as Batman, Harry Potter, or Spider-man are also considered Contributors </td>
+</tr>
+
+<tr id="vcoF1" style="display:none;">
+<td  class="pad4"><code>biography</code></td>
+<td><code>String</code></td>
+<td>Contributor's biography.</td>
+</tr>
+
+<tr id="vcoF2" style="display:none;">
+<td  class="pad4"><code>biographyLanguage</code></td>
+<td><code>String</code></td>
+<td>The language for the <code>biography</code> property. This is a 3-letter language code based on <a href="http://www.loc.gov/standards/iso639-2/php/code_list.php" target="_blank">ISO 639.2</a></td>
+</tr>
+
+ <tr id="vcoF3" style="display:none;">
+<td  class="pad4"><code>birthDate</code></td>
+<td><code>String</code></td>
+<td>The contributor's birth date in UTC format.</td>
+</tr>
+
+<tr id="vcoF4" style="display:none;">
+<td  class="pad4"><code>birthPlace</code></td>
+<td><code>String</code></td>
+<td>The contributor's birth place.</td>
+</tr>
+
+<tr id="vcoF5" style="display:none;">
+<td  class="pad4"><code>deathDate</code></td>
+<td><code>String</code></td>
+<td>The contributor's date of death in UTC format.</td>
+</tr>
+
+<tr id="vcoF6" style="display:none;">
+<td  class="pad4"><code>deathPlace</code></td>
+<td><code>String</code></td>
+<td>The place where the contributor died.</td>
+</tr>
+
+<tr id="vcoF7" style="display:none;">
+<td  class="pad4"><code>mediaSpace</code></td>
+<td><code>String</code></td>
+<td>The kind of media, such as VIDEO.</td>
+</tr>
+
+<tr id="vcoF8" style="display:none;">
+<td  class="pad4"><code>productID</code></td>
+<td><code>String</code></td>
+<td>Product ID.</td>
+</tr>
+
+<tr id="vcoF9" style="display:none;">
+<td  class="pad4"><code>role</code></td>
+<td><code>String</code></td>
+<td>The name of the contributor's character in show (if actor).</td>
+</tr>
+
+<tr id="vcoF10" style="display:none;">
+<td  class="pad4"><code>roleBilling</code></td>
+<td><code>String</code></td>
+<td>A number identifying the role's listing in the credits.</td>
+</tr>
+
+<tr id="vcoF11" style="display:none;">
+<td  class="pad4"><code>roleCategory</code></td>
+<td><code>String</code></td>
+<td>Category for role - Acting, Support, etc.</td>
+</tr>
+
+<tr id="vcoF12" style="display:none;">
+<td  class="pad4"><code>tui</code></td>
+<td><code>String</code></td>
+<td>A Gracenote acronym for  "title unique identifier". For example: "267348592". This and <code>tuiTag</code> are used for unique identification within the Gracenote service.</td>
+</tr>
+
+<tr id="vcoF13" style="display:none;">
+<td  class="pad4"><code>tuiTag</code></td>
+<td><code>String</code></td>
+<td>For example: "343DFA0AAF615988C9F4AB1ECB383D00".</td>
+</tr>
+
+<tr id="vcoF14" style="display:none;">
+<td  class="pad4"><code>isPartial</code></td>
+<td><code>BOOL</code></td>
+<td>Indicates if this is a partial record. Since the results returned could potentially be infinite, not all possible results can be returned.</td>
+</tr>
+
+<tr id="vcoF15" style="display:none;">
+<td  class="pad4"><code class="object">credits</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoCredit</code> objects.  See <code>acrMatches &gt; avWork &gt; credits</code> for object property descriptions.</td>
+</tr>
+
+<tr id="vcoF16" style="display:none;">
+<td  class="pad4" onClick="javascript:toggle3(ary5, 'name', 'nameOfficial', notHide);" id="name" ><img src="expandFolderIcon2.jpg"><code class="object">nameOfficial</code></td>
+<td><code>GnVideoName</code></td>
+<td>Video name object.</td>
+</tr>
+
+<tr id="vnF1" style="display:none;">
+<td  class="pad5"><code>display</code></td>
+<td><code>String</code></td>
+<td>Video's display name.</td>
+</tr>
+
+<tr id="vnF2" style="display:none;">
+<td  class="pad5"><code>displayLanguage</code></td>
+<td><code>String</code></td>
+<td>The language for the <code>display</code> property. This is a 3-letter language code based on <a href="http://www.loc.gov/standards/iso639-2/php/code_list.php" target="_blank">ISO 639.2</a></td>
+</tr>
+
+<tr id="vnF3" style="display:none;">
+<td  class="pad5"><code>family</code></td>
+<td><code>String</code></td>
+<td></td>
+</tr>
+
+ <tr id="vnF4" style="display:none;">
+<td  class="pad5"><code>given</code></td>
+<td><code>String</code></td>
+<td>&nbsp;</td>
+</tr>
+
+<tr id="vnF5" style="display:none;">
+<td  class="pad5"><code>prefix</code></td>
+<td><code>String</code></td>
+<td>Name prefix (e.g., "The") that should not be used in sorting.</td>
+</tr>
+
+<tr id="vnF6" style="display:none;">
+<td  class="pad5"><code>sortable</code></td>
+<td><code>String</code></td>
+<td>&nbsp;</td>
+</tr>
+
+<tr id="vcoF17" style="display:none;">
+<td  class="pad4" ><code>nameRegional</code></td>
+<td><code>GnVideoName</code></td>
+<td>Video name object. See acrMatches &gt; avWork &gt; credits &gt; contributor &gt; nameOfficial for object properties. </td>
+</tr>
+
+<tr id="vcoF18" style="display:none;">
+<td  class="pad4"><code>nameRegionalLocale</code></td>
+<td><code>GnVideoName</code></td>
+<td>Video name object. See acrMatches &gt; avWork &gt; credits &gt; contributor &gt; nameOfficial for object properties. </td>
+</tr>
+
+<tr id="vcoF19" style="display:none;">
+<td  class="pad4" ><code class="object">externalIDs</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoExternalID</code> objects. See <code><strong>acrMatches &gt; avWork &gt; externalIds</strong></code>  for object property descriptions. </td>
+</tr>
+
+<tr id="vcoF20" style="display:none;">
+<td  class="pad4" ><code class="object">genre</code></td>
+<td><code>GnVideoGenre</code></td>
+<td>See <code><strong>acrMatches &gt; avWork &gt; genre</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="vcF6" style="display:none;">
+<td  class="pad3"><code class="object">seasons</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoSeason</code> objects. See <code><strong>acrMatches &gt; avWork &gt; seasons</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="vcF7" style="display:none;">
+<td  class="pad3"><code class="object">series</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoSeries</code> objects. See <code><strong>acrMatches &gt; avWork &gt; series</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="vcF8" style="display:none;">
+<td  class="pad3"><code class="object">works</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoWork</code> objects. See <code><strong>acrMatches &gt; avWork </strong></code>for object property descriptions.</td>
+</tr>
+
+<tr id="vwF39" style="display:none;">
+<td  class="pad2" onClick="javascript:toggle3(ary6, 'extIDs', 'externalIDs', notHide);" id="extIDs" ><img src="expandFolderIcon2.jpg"><code class="object">externalIDs</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoExternalID</code> objects. These objects identify a source external to Gracenote (e.g., NetFlix), that also have an identifier for this work.</td>
+</tr>
+
+<tr id="eiF1" style="display:none;">
+<td  class="pad3"><code>source</code></td>
+<td><code>String</code></td>
+<td>&nbsp;</td>
+</tr>
+
+<tr id="eiF2" style="display:none;">
+<td  class="pad3"><code>type</code></td>
+<td><code>String</code></td>
+<td>External ID type, such as a UPC (Univeral Product Code)</td>
+</tr>
+
+<tr id="eiF3" style="display:none;">
+<td  class="pad3"><code>value</code></td>
+<td><code>String</code></td>
+<td>External ID value.</td>
+</tr>
+
+<tr id="vwF40" style="display:none;">
+<td  class="pad2" onClick="javascript:toggle3(ary24, 'franchise', 'franchise', notHide);" id="franchise" ><img src="expandFolderIcon2.jpg"><code class="object">franchise</code></td>
+<td><code>GnVideoFranchise</code></td>
+<td>Franchise object</td>
+</tr>
+
+<tr id="fr1" style="display:none;">
+<td  class="pad3"><code>count</code></td>
+<td><code>String</code></td>
+<td>&nbsp;</td>
+</tr>
+
+<tr id="fr2" style="display:none;">
+<td  class="pad3"><code>num</code></td>
+<td><code>String</code></td>
+<td>&nbsp;</td>
+</tr>
+
+<tr id="fr3" style="display:none;">
+<td  class="pad3"><code class="object">title</code></td>
+<td><code>GnVideoTitle</code></td>
+<td>See acrMatches &gt; title for object properties.</td>
+</tr>
+
+<tr id="vwF41" style="display:none;">
+<td  class="pad2" onClick="javascript:toggle3(ary7, 'Genre', 'genre', notHide);" id="Genre" ><img src="expandFolderIcon2.jpg"><code class="object">genre</code></td>
+<td><code>GnVideoGenre</code></td>
+<td>Genre object</td>
+</tr>
+
+<tr id="g1" style="display:none;">
+<td  class="pad3"><code>level1</code></td>
+<td><code>String</code></td>
+<td>Primary genre</td>
+</tr>
+
+<tr id="g2" style="display:none;">
+<td  class="pad3"><code>level2</code></td>
+<td><code>String</code></td>
+<td>Secondary genre</td>
+</tr>
+
+<tr id="g3" style="display:none;">
+<td  class="pad3"><code>level3</code></td>
+<td><code>String</code></td>
+<td>Tertiary genre</td>
+</tr>
+
+<tr id="vwF42" style="display:none;">
+<td  class="pad2" onClick="javascript:toggle3(ary14, 'plots', 'plots', notHide);" id="plots" ><img src="expandFolderIcon2.jpg"><code class="object">plots</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoPlot</code> objects</td>
+</tr>
+
+
+<tr id="plF1" style="display:none;">
+<td  class="pad3"><code>synopsis</code></td>
+<td><code>String</code></td>
+<td>Plot summary, e.g., (for Friends episode) "Monica's popularity at a karaoke club might have more to do with her revealing dress than her voice; Ross asks for Chandler's help in making Rachel jealous; Joey gets his eyebrows waxed."</td>
+</tr>
+
+<tr id="plF2" style="display:none;">
+<td  class="pad3"><code>synopsisLanguage</code></td>
+<td><code>String</code></td>
+<td>The language for the <code>synopsis</code> property. This is a 3-letter language code based on <a href="http://www.loc.gov/standards/iso639-2/php/code_list.php" target="_blank">ISO 639.2</a></td>
+</tr>
+
+
+ <tr id="vwF43" style="display:none;">
+ <td  class="pad2" onClick="javascript:toggle3(ary17, 'products', 'products', notHide);toggle3(ary19, 'language', 'language', hide);toggle3(ary20, 'layer', 'matchedLayer', hide);toggle3(ary21, 'side', 'matchedSide', hide);toggle3(ary22, 'region', 'region', hide);toggle3(ary18, 'disc', 'matchedDisc', hide);" id="products" ><img src="expandFolderIcon2.jpg"><code class="object">products</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoProduct</code> objects. A Product refers to the commercial release of a Film, TV Series, or video content. Products contain a unique commercial code such as a UPC, Hinban, or EAN. Products are for the most part released on a physical format, such as a DVD or Blu-ray.</td>
+</tr>
+
+<tr id="prF1" style="display:none;">
+<td  class="pad3"><code>aspectRatio</code></td>
+<td><code>String</code></td>
+<td>The aspect ratio of an image describes the proportional relationship between its width and its height commonly expressed as two numbers separated by a colon. Two common videographic aspect ratios are 4:3 (1.33:1), the universal video format of the 20th century and 16:9 (1.77:1), universal for high-definition television and European digital television. <a href="http://en.wikipedia.org/wiki/Aspect_ratio_%28image%29" target="_blank">More information...</a></td>
+</tr>
+
+<tr id="prF2" style="display:none;">
+<td  class="pad3"><code>aspectRatioType</code></td>
+<td><code>String</code></td>
+<td>For example, "STANDARD".</td>
+</tr>
+
+<tr id="prF3" style="display:none;">
+<td  class="pad3"><code>dateOriginalRelease</code></td>
+<td><code>String</code></td>
+<td>Work's original release date in UTC format.</td>
+</tr>
+
+<tr id="prF4" style="display:none;">
+<td  class="pad3"><code>dateRelease</code></td>
+<td><code>String</code></td>
+<td>Release data of this product in UTC format.</td>
+</tr>
+
+<tr id="prF5" style="display:none;">
+<td  class="pad3"><code>duration</code></td>
+<td><code>String</code></td>
+<td>Duration of the work. <code>durationUnit</code> indicates the time measurement used (e.g., seconds).</td>
+</tr>
+
+<tr id="prF6" style="display:none;">
+<td  class="pad3"><code>durationUnits</code></td>
+<td><code>String</code></td>
+<td>The type of duration time measurement, e.g., "SEC" (seconds), "MS" (milliseconds).</td>
+</tr>
+
+<tr id="prF7" style="display:none;">
+<td  class="pad3"><code>notes</code></td>
+<td><code>String</code></td>
+<td>&nbsp;</td>
+</tr>
+
+<tr id="prF8" style="display:none;">
+<td  class="pad3"><code>productID</code></td>
+<td><code>String</code></td>
+<td>A hashed representation of the <code>tuiTag</code> property.</td>
+</tr>
+
+<tr id="prF9" style="display:none;">
+<td  class="pad3"><code>productionType</code></td>
+<td><code>String</code></td>
+<td>The kind of production for the AV Work, e.g., "Animation", "Documentary", etc.</td>
+</tr>
+
+<tr id="prF10" style="display:none;">
+<td  class="pad3"><code>tui</code></td>
+<td><code>String</code></td>
+<td>A Gracenote acronym for  "title unique identifier". For example: "267348592". This and <code>tuiTag</code> are used for unique identification within the Gracenote service.</td>
+</tr>
+
+<tr id="prF11" style="display:none;">
+<td  class="pad3"><code>tuiTag</code></td>
+<td><code>String</code></td>
+<td>For example: "343DFA0AAF615988C9F4AB1ECB383D00".</td>
+</tr>
+
+<tr id="prF12" style="display:none;">
+<td  class="pad3"><code>isPartial</code></td>
+<td><code>BOOL</code></td>
+<td>Indicates if this is a partial record. Since the results returned could potentially be infinite, not all possible results can be returned.</td>
+</tr>
+
+<tr id="prF13" style="display:none;">
+<td  class="pad3" onClick="javascript:toggle3(ary19, 'language', 'language', notHide);" id="language" ><code>language</code></td>
+<td><code>GnVideoLanguage</code></td>
+<td>Video language object.</td>
+</tr>
+
+<tr id="vlF1" style="display:none;">
+<td  class="pad4"><code>code</code></td>
+<td><code>String</code></td>
+<td>A 3-letter language code based on <a href="http://www.loc.gov/standards/iso639-2/php/code_list.php" target="_blank">ISO 639.2</a>. For example: spa (Spanish).</td>
+</tr>
+
+<tr id="vlF2" style="display:none;">
+<td  class="pad4"><code>display</code></td>
+<td><code>String</code></td>
+<td>The language for display, e.g., "Spanish".</td>
+</tr>
+
+<tr id="prF14" style="display:none;">
+<td  class="pad3" onClick="javascript:toggle3(ary18, 'disc', 'matchedDisc', notHide);" id="disc" ><code>matchedDisc</code></td>
+<td><code>GnVideoDisc</code></td>
+<td>Video disc object for this work.</td>
+</tr>
+
+<tr id="vdF1" style="display:none;">
+<td  class="pad4"><code>matched</code></td>
+<td><code>String</code></td>
+<td>&nbsp;</td>
+</tr>
+
+<tr id="vdF2" style="display:none;">
+<td  class="pad4"><code>ordinal</code></td>
+<td><code>String</code></td>
+<td>Number of disc in a disc set.</td>
+</tr>
+
+<tr id="vdF3" style="display:none;">
+<td  class="pad4"><code>productID</code></td>
+<td><code>String</code></td>
+<td>A hashed representation of the <code>tuiTag</code> property.</td>
+</tr>
+
+<tr id="vdF4" style="display:none;">
+<td  class="pad4"><code>tui</code></td>
+<td><code>String</code></td>
+<td>A Gracenote acronym for  "title unique identifier". For example: "267348592". This and <code>tuiTag</code> are used for unique identification within the Gracenote service.</td>
+</tr>
+
+<tr id="vdF5" style="display:none;">
+<td  class="pad4"><code>tuiTag</code></td>
+<td><code>String</code></td>
+<td>For example: "343DFA0AAF615988C9F4AB1ECB383D00".</td>
+</tr>
+
+<tr id="vdF6" style="display:none;">
+<td  class="pad4"><code class="object">matchedLayer</code></td>
+<td><code>GnVideoLayer</code></td>
+<td>A disc layer object. A disc can have more than one layer on a side. See <code><strong>acrMatches &gt; avWork &gt; products &gt; matchedLayer</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="vdF7" style="display:none;">
+<td  class="pad4"><code class="object">matchedSide</code></td>
+<td><code>GnVideoSide</code></td>
+<td>A video disc side object. See <code><strong>acrMatches &gt; avWork &gt; products &gt; matchedSide</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="vdF8" style="display:none;">
+<td  class="pad4"><code class="object">sides</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoDisc</code> objects.</td>
+</tr>
+
+ <tr id="vdF9" style="display:none;">
+<td  class="pad4"><code class="object">title</code></td>
+<td><code>GnVideoTitle</code></td>
+<td>A video title object. See <code><strong>acrMatches &gt; avWork &gt; title</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="prF15" style="display:none;">
+<td  class="pad3" onClick="javascript:toggle3(ary20, 'layer', 'matchedLayer', notHide);" id="layer"><code>matchedLayer</code></td>
+<td><code>GnVideoLayer</code></td>
+<td>Video disc layer object.</td>
+</tr>
+
+<tr id="vlayF1" style="display:none;">
+<td  class="pad4"><code>matched</code></td>
+<td><code>String</code></td>
+<td>&nbsp;</td>
+</tr>
+
+<tr id="vlayF2" style="display:none;">
+<td  class="pad4"><code>mediaType</code></td>
+<td><code>Enumerator</code></td>
+<td>&nbsp;</td>
+</tr>
+
+<tr id="vlayF3" style="display:none;">
+<td  class="pad4"><code>ordinal</code></td>
+<td><code>String</code></td>
+<td>Ordinal value in a set of discs.</td>
+</tr>
+
+<tr id="vlayF4" style="display:none;">
+<td  class="pad4"><code>regionCode</code></td>
+<td><code>String</code></td>
+<td>&nbsp;</td>
+</tr>
+
+<tr id="vlayF5" style="display:none;">
+<td  class="pad4"><code>tvSystem</code></td>
+<td><code>String</code></td>
+<td>NTSC (National Television System Committee) or PAL (Phase Alternating Line). The video standard or electronic signal for
+recording varies from country to country. The two most
+ common video standards used are NTSC and PAL.
+NTSC is the video system or standard used in North America and most of South America. In
+NTSC, 30 frames are transmitted  each second. Each frame is made up of
+525 individual scan lines. PAL is the predominant video system or
+ standard mostly used overseas. In PAL, 25 frames are transmitted each
+second. Each frame is made up of 625 individual scan lines.</td>
+</tr>
+
+<tr id="vlayF6" style="display:none;">
+<td  class="pad4"><code class="object">region</code></td>
+<td><code>GnVideoRegion</code></td>
+<td>A video region object. See <code><strong>acrMatches &gt; avWork &gt; products &gt; region</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="vlayF7" style="display:none;">
+<td  class="pad4"><code class="object">features</code></td>
+<td><code>Enum
+erator</code></td>
+<td><code>GnVideoFeature</code> objects. See acrMatches &gt; avWork &gt; features for object properties.</td>
+</tr>
+
+
+<tr id="prF16" style="display:none;">
+<td  class="pad3" onClick="javascript:toggle3(ary21, 'side', 'matchedSide', notHide);" id="side"><code>matchedSide</code></td>
+<td><code>GnVideoSide</code></td>
+<td>Video disc side object.</td>
+</tr>
+
+<tr id="vsideF1" style="display:none;">
+<td  class="pad4"><code>matched</code></td>
+<td><code>String</code></td>
+<td>&nbsp;</td>
+</tr>
+
+<tr id="vsideF2" style="display:none;">
+<td  class="pad4"><code>ordinal</code></td>
+<td><code>String</code></td>
+<td>Identifies which side.</td>
+</tr>
+
+<tr id="vsideF3" style="display:none;">
+<td  class="pad4"><code class="object">layer</code></td>
+<td><code>GnVideoLayer</code></td>
+<td>A video disc layer object. A disc can have more than one layer on a side. See <code><strong>acrMatches &gt; avWork &gt; products &gt; matchedLayer</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="vsideF4" style="display:none;">
+<td  class="pad4"><code class="object">matchedLayer</code></td>
+<td><code>GnVideoLayer</code></td>
+<td>A video disc layer object. See <code><strong>acrMatches &gt; avWork &gt; products &gt; matchedLayer</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="prF17" style="display:none;">
+<td  class="pad3" onClick="javascript:toggle3(ary22, 'region', 'region', notHide);" id="region" ><code>region</code></td>
+<td><code>GnVideoRegion</code></td>
+<td>Video region object</td>
+</tr>
+
+<tr id="vrF1" style="display:none;">
+<td  class="pad4"><code>regionDescription</code></td>
+<td><code>String</code></td>
+<td>Region description.</td>
+</tr>
+
+<tr id="vrF2" style="display:none;">
+<td  class="pad4"><code>ID</code></td>
+<td><code>String</code></td>
+<td>Region identifier.</td>
+</tr>
+
+<tr id="prF18" style="display:none;">
+<td  class="pad3"><code class="object">title</code></td>
+<td><code>GnVideoTitle</code></td>
+<td>A video title object. See <code><strong>acrMatches &gt; avWork &gt; title</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="prF19" style="display:none;">
+<td  class="pad3"><code class="object">discs</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoDisc</code> objects. See <code><strong>acrMatches &gt; avWork &gt; products &gt; matchedDisc</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="prF20" style="display:none;">
+<td  class="pad3"><code class="object">externalIDs</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoExternalID</code> objects. See <code><strong>acrMatches &gt; avWork &gt; externalIDs</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="prF21" style="display:none;">
+<td  class="pad3"><code class="object">genre</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoGenre</code> objects. See <code><strong>acrMatches &gt; avWork &gt; genres</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="prF22" style="display:none;">
+<td  class="pad3"><code class="object">ratings</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoRatings</code> objects. See <code><strong>acrMatches &gt; avWork &gt; ratings</strong></code> for object property descriptions.</td>
+</tr>
+
+
+
+<tr id="vwF44" style="display:none;">
+<td  class="pad2" onClick="javascript:toggle3(ary13, 'ratings', 'ratings', notHide);" id="ratings" ><img src="expandFolderIcon2.jpg"><code class="object">ratings</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoRating</code> objects</td>
+</tr>
+
+<tr id="ratF1" style="display:none;">
+<td  class="pad3"><code>ratingDescription</code></td>
+<td><code>String</code></td>
+<td>&nbsp;</td>
+</tr>
+
+
+<tr id="ratF2" style="display:none;">
+<td  class="pad3"><code>reason</code></td>
+<td><code>String</code></td>
+<td>Reason for rating, e.g., "Intense Sequences of Violence and Some Menace."</td>
+</tr>
+
+
+<tr id="ratF3" style="display:none;">
+<td  class="pad3"><code>type</code></td>
+<td><code>String</code></td>
+<td>Type of ratings system, e.g., "MPAA".</td>
+</tr>
+
+
+<tr id="ratF4" style="display:none;">
+<td  class="pad3"><code>value</code></td>
+<td><code>String</code></td>
+<td>Actual rating, e.g., "PG-13".</td>
+</tr>
+
+
+<tr id="vwF45" style="display:none;">
+<td  class="pad2" onClick="javascript:toggle3(ary8, 'seasons', 'seasons', notHide);" id="seasons" ><img src="expandFolderIcon2.jpg"><code class="object">seasons</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GNVideoSeason</code> objects. A Season is an ordered collection of Works, typically representing a season of a TV series. For example: CSI: Miami (Season One), CSI: Miami (Season Two), CSI: Miami (Season Three).</td>
+</tr>
+
+
+<tr id="vsF1" style="display:none;">
+<td  class="pad3"><code>audience</code></td>
+<td><code>String</code></td>
+<td>A supported audience type for video data, such as "Kids and Family", "African-American", or "Young Adult".</td>
+</tr>
+
+
+<tr id="vsF2" style="display:none;">
+<td  class="pad3"><code>dateOriginalRelease</code></td>
+<td><code>String</code></td>
+<td>Original release date in UTC format.</td>
+</tr>
+
+<tr id="vsF3" style="display:none;">
+<td  class="pad3"><code>duration</code></td>
+<td><code>String</code></td>
+<td>A string representation of integer time units, e.g. "3600000".</td>
+</tr>
+
+<tr id="vsF4" style="display:none;">
+<td  class="pad3"><code>durationUnits</code></td>
+<td><code>String</code></td>
+<td>The duration time units, e.g. "ms" (milliseconds). </td>
+</tr>
+
+
+<tr id="vsF5" style="display:none;">
+<td  class="pad3"><code>mood</code></td>
+<td><code>String</code></td>
+<td>The work's mood, e.g., "Playful".</td>
+</tr>
+
+<tr id="vsF6" style="display:none;">
+<td  class="pad3"><code>origin1</code></td>
+<td><code>String</code></td>
+<td>Show's primary geographic location, e.g., New York City </td>
+</tr>
+
+<tr id="vsF7" style="display:none;">
+<td  class="pad3"><code>origin2</code></td>
+<td><code>String</code></td>
+<td>Show's second geographic location. </td>
+</tr>
+
+<tr id="vsF8" style="display:none;">
+<td  class="pad3"><code>origin3</code></td>
+<td><code>String</code></td>
+<td>Show's third geographic location. </td>
+</tr>
+
+<tr id="vsF9" style="display:none;">
+<td  class="pad3"><code>origin4</code></td>
+<td><code>String</code></td>
+<td>Show's fourth geographic location. </td>
+</tr>
+
+<tr id="vsF10" style="display:none;">
+<td  class="pad3"><code>gdoSerialized</code></td>
+<td><code>String</code></td>
+<td>Serialized GDO.</td>
+</tr>
+
+<tr id="vsF11" style="display:none;">
+<td  class="pad3"><code>gnID</code></td>
+<td><code>String</code></td>
+<td>Gracenote identifier.</td>
+</tr>
+
+<tr id="vsF12" style="display:none;">
+<td  class="pad3"><code>gnuID</code></td>
+<td><code>String</code></td>
+<td>&nbsp;</td>
+</tr>
+
+<tr id="vsF13" style="display:none;">
+<td  class="pad3"><code>productID</code></td>
+<td><code>String</code></td>
+<td>A hashed representation of the <code>tuiTag</code> property.</td>
+</tr>
+
+<tr id="vsF14" style="display:none;">
+<td  class="pad3"><code>productionType</code></td>
+<td><code>String</code></td>
+<td>The kind of production for the AV Work, e.g., "Animation", "Documentary", etc.</td>
+</tr>
+
+<tr id="vsF15" style="display:none;">
+<td  class="pad3"><code>reputation</code></td>
+<td><code>String</code></td>
+<td>A supported film reputation type for video data, such as "Classic", "Chick Flick", and "Cult". </td>
+</tr>
+
+<tr id="vsF16" style="display:none;">
+<td  class="pad3"><code>scenario</code></td>
+<td><code>String</code></td>
+<td>A supported scenario for video data, such as "Action", "Comedy", and "Drama".</td>
+</tr>
+
+<tr id="vsF17" style="display:none;">
+<td  class="pad3"><code>seasonCount</code></td>
+<td><code>String</code></td>
+<td>The total number of seasons.</td>
+</tr>
+
+<tr id="vsF18" style="display:none;">
+<td  class="pad3"><code>seasonNumber</code></td>
+<td><code>String</code></td>
+<td>The season number.</td>
+</tr>
+
+<tr id="vsF19" style="display:none;">
+<td  class="pad3"><code>serialType</code></td>
+<td><code>String</code></td>
+<td>A supported video serial type, such as Series or Episode.</td>
+</tr>
+
+<tr id="vsF20" style="display:none;">
+<td  class="pad3"><code>settingEnvironment</code></td>
+<td><code>String</code></td>
+<td>The physical environment captured in the work. These do not refer to specific locations, but rather general (or generic) locations. For example: Prison, High School, Skyscraper, Desert, etc.</td>
+</tr>
+
+<tr id="vsF21" style="display:none;">
+<td  class="pad3"><code>settingTimePeriod</code></td>
+<td><code>String</code></td>
+<td>A supported historical time setting for video data, such as "Elizabethan Era 1558-1603", or "Jazz Age 1919-1929".</td>
+</tr>
+
+<tr id="vsF22" style="display:none;">
+<td  class="pad3"><code>source</code></td>
+<td><code>String</code></td>
+<td>A supported story concept source for video data, such as "Fairy Tales and Nursery Rhymes".</td>
+</tr>
+
+<tr id="vsF23" style="display:none;">
+<td  class="pad3"><code>storyType</code></td>
+<td><code>String</code></td>
+<td>A supported overall story type for video data, such as "Love Story".</td>
+</tr>
+
+<tr id="vsF24" style="display:none;">
+<td  class="pad3"><code>style</code></td>
+<td><code>String</code></td>
+<td>A supported film style type for video data, such as "Film Noir".</td>
+</tr>
+
+
+<tr id="vsF25" style="display:none;">
+<td  class="pad3"><code>topic</code></td>
+<td><code>String</code></td>
+<td>A supported film topic for video data, such as "Racing" or "Teen Angst". </td>
+</tr>
+
+<tr id="vsF26" style="display:none;">
+<td  class="pad3"><code>tui</code></td>
+<td><code>String</code></td>
+<td>A Gracenote acronym for  "title unique identifier". For example: "267348592". This and <code>tuiTag</code> are used for unique identification within the Gracenote service.</td>
+</tr>
+
+<tr id="vsF27" style="display:none;">
+<td  class="pad3"><code>tuiTag</code></td>
+<td><code>String</code></td>
+<td>For example: "343DFA0AAF615988C9F4AB1ECB383D00".</td>
+</tr>
+
+<tr id="vsF28" style="display:none;">
+<td  class="pad3"><code>workType</code></td>
+<td><code>String</code></td>
+<td>A supported work type for video data, such as "Musical" or "Image".</td>
+</tr>
+
+<tr id="vsF29" style="display:none;">
+<td  class="pad3"><code>isPartial</code></td>
+<td><code>BOOL</code></td>
+<td>Indicates if this is a partial record. Since the results returned could potentially be infinite, not all possible results can be returned.</td>
+</tr>
+
+<tr id="vsF30" style="display:none;">
+<td  class="pad3"><code class="object">credits</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoCredit</code> objects. See <code><strong>acrMatches &gt; avWork &gt; credits</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="vsF31" style="display:none;">
+<td  class="pad3"><code class="object">externalIDs</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoExternalID</code> objects. See <code><strong>acrMatches &gt; avWork &gt; externalIDs</strong></code> for object property descriptions.</td></tr>
+
+<tr id="vsF32" style="display:none;">
+<td  class="pad3"><code class="object">franchise</code></td>
+<td><code>GnVideoFranchise</code></td>
+<td>Franchise object. See acrMatches &gt; avWork &gt; franchise for object properties.</td></tr>
+
+<tr id="vsF33" style="display:none;">
+<td  class="pad3"><code class="object">genre</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoCredit</code> objects. See acrMatches &gt; avWork &gt; genre for object property descriptions.</td>
+</tr>
+
+<tr id="vsF34" style="display:none;">
+<td  class="pad3"><code class="object">plots</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoPlot</code> objects. See <code><strong>acrMatches &gt; avWork &gt; plots</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="vsF35" style="display:none;">
+<td  class="pad3"><code class="object">products</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoProduct</code> objects. See <code><strong>acrMatches &gt; avWork &gt; products</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="vsF36" style="display:none;">
+<td  class="pad3"><code class="object">ratings</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoRating</code> objects. See <code><strong>acrMatches &gt; avWork &gt; ratings</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="vsF37" style="display:none;">
+<td  class="pad3"><code class="object">series</code></td>
+<td><code>GnVideoSeries</code></td>
+<td>A video series object. See <code><strong>acrMatches &gt; avWork &gt; series</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="vsF38" style="display:none;">
+<td  class="pad3"><code class="object">title</code></td>
+<td><code>GnVideoTitle</code></td>
+<td>A video title object. See <code><strong>acrMatches &gt; avWork &gt; title</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="vsF39" style="display:none;">
+<td  class="pad3"><code class="object">works</code></td>
+<td><code>Enumerator</code></td>
+<td>See acrMatches &gt; avWork for object property descriptions.</td>
+</tr>
+
+ <tr id="vwF46" style="display:none;">
+<td  class="pad2" onClick="javascript:toggle3(ary16, 'series', 'series', notHide);" id="series" ><img src="expandFolderIcon2.jpg"><code class="object">series</code></td>
+<td><code>GnVideoSeries</code></td>
+<td>A Series is a collection of related Works, typically in sequence, and often comprised of Seasons (generally for TV series), for example: CSI: Miami, CSI: Vegas, CSI: Crime Scene Investigation.</td>
+</tr>
+
+<tr id="vsrF1" style="display:none;">
+<td  class="pad3"><code>audience</code></td>
+<td><code>String</code></td>
+<td>A supported audience type for video data, such as "Kids and Family", "African-American", or "Young Adult".</td>
+</tr>
+
+<tr id="vsrF2" style="display:none;">
+<td  class="pad3"><code>dateOriginalRelease</code></td>
+<td><code>String</code></td>
+<td>Date, in UTC format, of original release.</td>
+</tr>
+
+<tr id="vsrF3" style="display:none;">
+<td  class="pad3"><code>duration</code></td>
+<td><code>String</code></td>
+<td>A string representation of integer time units, e.g. "3600000".</td>
+</tr>
+
+<tr id="vsrF4" style="display:none;">
+<td  class="pad3"><code>durationUnits</code></td>
+<td><code>String</code></td>
+<td>The duration time units, e.g. "ms" (milliseconds). </td>
+</tr>
+
+<tr id="vsrF5" style="display:none;">
+<td  class="pad3"><code>gdoSerialized</code></td>
+<td><code>String</code></td>
+<td>Serialized GDO.</td>
+</tr>
+
+<tr id="vsrF6" style="display:none;">
+<td  class="pad3"><code>gnID</code></td>
+<td><code>String</code></td>
+<td>Gracenote identifier.</td>
+</tr>
+
+<tr id="vsrF7" style="display:none;">
+<td  class="pad3"><code>gnuID</code></td>
+<td><code>String</code></td>
+<td>&nbsp;</td>
+</tr>
+
+ <tr id="vsrF8" style="display:none;">
+<td  class="pad3"><code>mood</code></td>
+<td><code>String</code></td>
+<td>The work's mood, e.g., "Playful".</td>
+</tr>
+
+<tr id="vsrF9" style="display:none;">
+<td  class="pad3"><code>origin1</code></td>
+<td><code>String</code></td>
+<td>Show's primary geographic location, e.g., New York City </td>
+</tr>
+
+<tr id="vsrF10" style="display:none;">
+<td  class="pad3"><code>origin2</code></td>
+<td><code>String</code></td>
+<td>Show's second geographic location. </td>
+</tr>
+
+<tr id="vsrF11" style="display:none;">
+<td  class="pad3"><code>origin3</code></td>
+<td><code>String</code></td>
+<td>Show's third geographic location. </td>
+</tr>
+
+<tr id="vsrF12" style="display:none;">
+<td  class="pad3"><code>origin4</code></td>
+<td><code>String</code></td>
+<td>Show's fourth geographic location. </td>
+</tr>
+
+<tr id="vsrF13" style="display:none;">
+<td  class="pad3"><code>productID</code></td>
+<td><code>String</code></td>
+<td>A hashed representation of the <code>tuiTag</code> property.</td>
+</tr>
+
+<tr id="vsrF14" style="display:none;">
+<td  class="pad3"><code>productionType</code></td>
+<td><code>String</code></td>
+<td>The kind of production for the AV Work, e.g., "Animation", "Documentary", etc.</td>
+</tr>
+
+<tr id="vsrF15" style="display:none;">
+<td  class="pad3"><code>reputation</code></td>
+<td><code>String</code></td>
+<td>A supported film reputation type for video data, such as "Classic", "Chick Flick", and "Cult". </td>
+</tr>
+
+<tr id="vsrF16" style="display:none;">
+<td  class="pad3"><code>scenario</code></td>
+<td><code>String</code></td>
+<td>A supported scenario for video data, such as "Action", "Comedy", and "Drama".</td>
+</tr>
+
+<tr id="vsrF17" style="display:none;">
+<td  class="pad3"><code>serialType</code></td>
+<td><code>String</code></td>
+<td>A supported video serial type, such as Series or Episode.</td>
+</tr>
+
+<tr id="vsrF18" style="display:none;">
+<td  class="pad3"><code>settingEnvironment</code></td>
+<td><code>String</code></td>
+<td>The physical environment captured in the work. These do not refer to specific locations, but rather general (or generic) locations. For example: Prison, High School, Skyscraper, Desert, etc.</td>
+</tr>
+
+<tr id="vsrF19" style="display:none;">
+<td  class="pad3"><code>settingTimePeriod</code></td>
+<td><code>String</code></td>
+<td>A supported historical time setting for video data, such as "Elizabethan Era 1558-1603", or "Jazz Age 1919-1929".</td>
+</tr>
+
+<tr id="vsrF20" style="display:none;">
+<td  class="pad3"><code>source</code></td>
+<td><code>String</code></td>
+<td>A supported story concept source for video data, such as "Fairy Tales and Nursery Rhymes".</td>
+</tr>
+
+<tr id="vsrF21" style="display:none;">
+<td  class="pad3"><code>storyType</code></td>
+<td><code>String</code></td>
+<td>A supported overall story type for video data, such as "Love Story".</td>
+</tr>
+
+<tr id="vsrF22" style="display:none;">
+<td  class="pad3"><code>style</code></td>
+<td><code>String</code></td>
+<td>A supported film style type for video data, such as "Film Noir".</td>
+</tr>
+
+<tr id="vsrF23" style="display:none;">
+<td  class="pad3"><code>topic</code></td>
+<td><code>String</code></td>
+<td>A supported film topic for video data, such as "Racing" or "Teen Angst". </td>
+</tr>
+
+<tr id="vsrF24" style="display:none;">
+<td  class="pad3"><code>tui</code></td>
+<td><code>String</code></td>
+<td>A Gracenote acronym for  "title unique identifier". For example: "267348592". This and <code>tuiTag</code> are used for unique identification within the Gracenote service.</td>
+</tr>
+
+<tr id="vsrF25" style="display:none;">
+<td  class="pad3"><code>tuiTag</code></td>
+<td><code>String</code></td>
+<td>A hashed representation of the <code>tui</code> property. For example: "343DFA0AAF615988C9F4AB1ECB383D00".</td>
+</tr>
+
+<tr id="vsrF26" style="display:none;">
+<td  class="pad3"><code>workType</code></td>
+<td><code>String</code></td>
+<td>A supported work type for video data, such as "Musical" or "Image".</td>
+</tr>
+
+<tr id="vsrF27" style="display:none;">
+<td  class="pad3"><code>isPartial</code></td>
+<td><code>BOOL</code></td>
+<td>Indicates if this is a partial record. Since the results returned could potentially be infinite, not all possible results can be returned.</td>
+</tr>
+
+<tr id="vsrF28" style="display:none;">
+<td  class="pad3"><code class="object">credits</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoCredit</code> objects. See <code><strong>acrMatches &gt; avWork &gt; credits</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="vsrF29" style="display:none;">
+<td  class="pad3"><code class="object">externalIDs</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoExternalID</code> objects. See <code><strong>acrMatches &gt; avWork &gt; externalIDs</strong></code> for object property descriptions.</td></tr>
+
+<tr id="vsrF30" style="display:none;">
+<td  class="pad3"><code class="object">franchise</code></td>
+<td><code>GnVideoFranchise</code></td>
+<td>Franchise object. See acrMatches &gt; avWork &gt; franchise for object properties.</td></tr>
+
+<tr id="vsrF31" style="display:none;">
+<td  class="pad3"><code class="object">genre</code></td>
+<td><code>GnVideoGenre</code></td>
+<td>Genre object. See acrMatches &gt; avWork &gt; genres for object property descriptions.</td>
+</tr>
+
+
+<tr id="vsrF32" style="display:none;">
+<td  class="pad3"><code class="object">plots</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoPlot</code> objects. See <code><strong>acrMatches &gt; avWork &gt; plots</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="vsrF33" style="display:none;">
+<td  class="pad3"><code class="object">ratings</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoRatings</code> objects. See <code><strong>acrMatches &gt; avWork &gt; ratings</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="vsrF34" style="display:none;">
+<td  class="pad3"><code class="object">seasons</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoSeason</code> objects. See <code><strong>acrMatches &gt; avWork &gt; seasons</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="vsrF35" style="display:none;">
+<td  class="pad3"><code class="object">title</code></td>
+<td><code>GnVideoTitle</code></td>
+<td>The work's title object. See acrMatches &gt; title for object properties.</td>
+</tr>
+
+ <tr id="vsrF36" style="display:none;">
+<td  class="pad3"><code class="object">works</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoWork</code> objects. See <code><strong>acrMatches &gt; avWork</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="vsrF37" style="display:none;">
+<td  class="pad3"><code class="object">products</code></td>
+<td><code>Enumerator</code></td>
+<td><code>GnVideoProduct</code> objects. See <code><strong>acrMatches &gt; avWork &gt; products</strong></code> for object property descriptions.</td>
+</tr>
+
+<tr id="vwF47" style="display:none;">
+<td  class="pad2"><code class="object">title</code></td>
+<td><code>GnVideoTitle</code></td>
+<td>Video title object. See acrMatches &gt; title for object properties</td>
+</tr>
+
+
+<tr id="acrF8" style="display:table-row;">
+<td  class="pad1"onClick="javascript:toggle3(ary23, 'customdata', 'customData', notHide);"  id="customdata"  ><img src="expandFolderIcon2.jpg"><code class="object">customData</code></td>
+<td><code>GnCustomData</code></td>
+<td>When working with Gracenote Professional Services to create bundles for ingestion into local cache, you can also provide, for each fingerprint, custom data. The GnCustomData object contains your custom data as bytes and an identifier. You are responsible for the identifier (during bundle creation), as well as the data's format and structure and how your application should process it.</td>
+</tr>
+
+<tr id="cd1" style="display:none;">
+<td class="pad2"><code>data</code></td>
+<td><code>Byte Array</code></td>
+<td>Custom data blob. </td>
+</tr>
+
+<tr id="cd2" style="display:none;">
+<td class="pad2"><code>dataID</code></td>
+<td><code>String</code></td>
+<td>Custom data identifier.</td>
+</tr>
+</tbody>
+</table>
+
+<br>&nbsp;<br><br>&nbsp;<br><br>&nbsp;<br><br>&nbsp;<br><br>&nbsp;<br><br>&nbsp;<br><br>&nbsp;<br><br>&nbsp;<br><br>&nbsp;<br>
+</body>
+</html>

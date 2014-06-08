@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* GN_ACR_SDKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* GN_ACR_SDKAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		4229B24017FA566F00FA84D5 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		4229B24117FA566F00FA84D5 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 889BC0B914CDD54C00458EBC /* Icon-72.png */; };
+		4229B24217FA566F00FA84D5 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 889BC0BA14CDD54C00458EBC /* Icon-Small-50.png */; };
+		4229B24317FA566F00FA84D5 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 889BC0BB14CDD54C00458EBC /* Icon-Small.png */; };
+		4229B24417FA566F00FA84D5 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 889BC0BC14CDD54C00458EBC /* Icon-Small@2x.png */; };
+		4229B24517FA566F00FA84D5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 889BC0BD14CDD54C00458EBC /* icon.png */; };
+		4229B24617FA566F00FA84D5 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 889BC0BE14CDD54C00458EBC /* Icon@2x.png */; };
+		4229B24717FA566F00FA84D5 /* SettingsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B623E1A1562E6340078A15B /* SettingsController.xib */; };
+		4229B24817FA566F00FA84D5 /* GN_ACR_SDKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B623E201562E7820078A15B /* GN_ACR_SDKViewController.xib */; };
+		4229B24A17FA566F00FA84D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		4229B24B17FA566F00FA84D5 /* GN_ACR_SDKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* GN_ACR_SDKAppDelegate.m */; };
+		4229B24C17FA566F00FA84D5 /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B623E191562E6340078A15B /* SettingsController.m */; };
+		4229B24D17FA566F00FA84D5 /* GN_ACR_SDKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B623E1E1562E7550078A15B /* GN_ACR_SDKViewController.m */; };
+		4229B24E17FA566F00FA84D5 /* GnCircularBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B05F28916682F9800210508 /* GnCircularBuffer.m */; };
+		4229B25017FA566F00FA84D5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4E451F1587F0A1005F38F0 /* AVFoundation.framework */; };
+		4229B25117FA566F00FA84D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		4229B25217FA566F00FA84D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		4229B25317FA566F00FA84D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		4229B25417FA566F00FA84D5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88915315149BF637002429F1 /* AudioToolbox.framework */; };
+		4229B25517FA566F00FA84D5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8814E6E814AD325D00B4FB69 /* Security.framework */; };
+		4229B25617FA566F00FA84D5 /* GracenoteACR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88416B4D14CA28C300FC597D /* GracenoteACR.framework */; };
+		4229B26117FCB62200FA84D5 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4229B26017FCB62200FA84D5 /* AdSupport.framework */; };
+		4229B26217FCB6FA00FA84D5 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4229B26017FCB62200FA84D5 /* AdSupport.framework */; };
+		5B05F28A16682F9800210508 /* GnCircularBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B05F28916682F9800210508 /* GnCircularBuffer.m */; };
+		5B4E45201587F0A1005F38F0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4E451F1587F0A1005F38F0 /* AVFoundation.framework */; };
+		5B623E1B1562E6340078A15B /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B623E191562E6340078A15B /* SettingsController.m */; };
+		5B623E1C1562E6340078A15B /* SettingsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B623E1A1562E6340078A15B /* SettingsController.xib */; };
+		5B623E1F1562E7550078A15B /* GN_ACR_SDKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B623E1E1562E7550078A15B /* GN_ACR_SDKViewController.m */; };
+		5B623E211562E7820078A15B /* GN_ACR_SDKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B623E201562E7820078A15B /* GN_ACR_SDKViewController.xib */; };
+		8814E6E914AD325D00B4FB69 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8814E6E814AD325D00B4FB69 /* Security.framework */; };
+		88416B4E14CA28C300FC597D /* GracenoteACR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88416B4D14CA28C300FC597D /* GracenoteACR.framework */; };
+		88915316149BF637002429F1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88915315149BF637002429F1 /* AudioToolbox.framework */; };
+		889BC0BF14CDD54C00458EBC /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 889BC0B914CDD54C00458EBC /* Icon-72.png */; };
+		889BC0C014CDD54C00458EBC /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 889BC0BA14CDD54C00458EBC /* Icon-Small-50.png */; };
+		889BC0C114CDD54C00458EBC /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 889BC0BB14CDD54C00458EBC /* Icon-Small.png */; };
+		889BC0C214CDD54C00458EBC /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 889BC0BC14CDD54C00458EBC /* Icon-Small@2x.png */; };
+		889BC0C314CDD54C00458EBC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 889BC0BD14CDD54C00458EBC /* icon.png */; };
+		889BC0C414CDD54C00458EBC /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 889BC0BE14CDD54C00458EBC /* Icon@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* GN_ACR_SDKAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GN_ACR_SDKAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* GN_ACR_SDKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GN_ACR_SDKAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* GN_ACR_SDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GN_ACR_SDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* GN_ACR_SDKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GN_ACR_SDKViewController.h; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* GN_ACR_SDK_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GN_ACR_SDK_Prefix.pch; sourceTree = "<group>"; };
+		4229B25A17FA566F00FA84D5 /* GN_ACR_SDK_64.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GN_ACR_SDK_64.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4229B26017FCB62200FA84D5 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		42C1083B17D93EA100CFA3CC /* SettingsDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsDelegate.h; sourceTree = "<group>"; };
+		5B05F28816682F9800210508 /* GnCircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GnCircularBuffer.h; sourceTree = "<group>"; };
+		5B05F28916682F9800210508 /* GnCircularBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GnCircularBuffer.m; sourceTree = "<group>"; };
+		5B4E451F1587F0A1005F38F0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5B623E181562E6340078A15B /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
+		5B623E191562E6340078A15B /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
+		5B623E1A1562E6340078A15B /* SettingsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsController.xib; sourceTree = "<group>"; };
+		5B623E1E1562E7550078A15B /* GN_ACR_SDKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GN_ACR_SDKViewController.m; sourceTree = "<group>"; };
+		5B623E201562E7820078A15B /* GN_ACR_SDKViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GN_ACR_SDKViewController.xib; sourceTree = "<group>"; };
+		5B638B9014E30CB70096BB9C /* CustomerCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerCredentials.h; sourceTree = "<group>"; };
+		8814E6E814AD325D00B4FB69 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		88416B4D14CA28C300FC597D /* GracenoteACR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GracenoteACR.framework; sourceTree = SOURCE_ROOT; };
+		889152D8149BEE96002429F1 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		88915315149BF637002429F1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		889BC0B914CDD54C00458EBC /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		889BC0BA14CDD54C00458EBC /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		889BC0BB14CDD54C00458EBC /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		889BC0BC14CDD54C00458EBC /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		889BC0BD14CDD54C00458EBC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		889BC0BE14CDD54C00458EBC /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* GN_ACR_SDK-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GN_ACR_SDK-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B4E45201587F0A1005F38F0 /* AVFoundation.framework in Frameworks */,
+				4229B26117FCB62200FA84D5 /* AdSupport.framework in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				88915316149BF637002429F1 /* AudioToolbox.framework in Frameworks */,
+				8814E6E914AD325D00B4FB69 /* Security.framework in Frameworks */,
+				88416B4E14CA28C300FC597D /* GracenoteACR.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4229B24F17FA566F00FA84D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4229B26217FCB6FA00FA84D5 /* AdSupport.framework in Frameworks */,
+				4229B25017FA566F00FA84D5 /* AVFoundation.framework in Frameworks */,
+				4229B25117FA566F00FA84D5 /* Foundation.framework in Frameworks */,
+				4229B25217FA566F00FA84D5 /* UIKit.framework in Frameworks */,
+				4229B25317FA566F00FA84D5 /* CoreGraphics.framework in Frameworks */,
+				4229B25417FA566F00FA84D5 /* AudioToolbox.framework in Frameworks */,
+				4229B25517FA566F00FA84D5 /* Security.framework in Frameworks */,
+				4229B25617FA566F00FA84D5 /* GracenoteACR.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5B05F28816682F9800210508 /* GnCircularBuffer.h */,
+				5B05F28916682F9800210508 /* GnCircularBuffer.m */,
+				1D3623240D0F684500981E51 /* GN_ACR_SDKAppDelegate.h */,
+				1D3623250D0F684500981E51 /* GN_ACR_SDKAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* GN_ACR_SDKViewController.h */,
+				5B623E1E1562E7550078A15B /* GN_ACR_SDKViewController.m */,
+				889152D8149BEE96002429F1 /* common.h */,
+				42C1083B17D93EA100CFA3CC /* SettingsDelegate.h */,
+				5B623E181562E6340078A15B /* SettingsController.h */,
+				5B623E191562E6340078A15B /* SettingsController.m */,
+				5B623E1A1562E6340078A15B /* SettingsController.xib */,
+				889BC0B814CDD54C00458EBC /* Images */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* GN_ACR_SDK.app */,
+				4229B25A17FA566F00FA84D5 /* GN_ACR_SDK_64.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* GN_ACR_SDK_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5B623E201562E7820078A15B /* GN_ACR_SDKViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* GN_ACR_SDK-Info.plist */,
+				5B638B9014E30CB70096BB9C /* CustomerCredentials.h */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4229B26017FCB62200FA84D5 /* AdSupport.framework */,
+				88915315149BF637002429F1 /* AudioToolbox.framework */,
+				5B4E451F1587F0A1005F38F0 /* AVFoundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				88416B4D14CA28C300FC597D /* GracenoteACR.framework */,
+				8814E6E814AD325D00B4FB69 /* Security.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		889BC0B814CDD54C00458EBC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				889BC0B914CDD54C00458EBC /* Icon-72.png */,
+				889BC0BA14CDD54C00458EBC /* Icon-Small-50.png */,
+				889BC0BB14CDD54C00458EBC /* Icon-Small.png */,
+				889BC0BC14CDD54C00458EBC /* Icon-Small@2x.png */,
+				889BC0BD14CDD54C00458EBC /* icon.png */,
+				889BC0BE14CDD54C00458EBC /* Icon@2x.png */,
+			);
+			path = Images;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* GN_ACR_SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "GN_ACR_SDK" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GN_ACR_SDK;
+			productName = GN_ACR_MobileSDK;
+			productReference = 1D6058910D05DD3D006BFB54 /* GN_ACR_SDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4229B23E17FA566F00FA84D5 /* GN_ACR_SDK_64 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4229B25717FA566F00FA84D5 /* Build configuration list for PBXNativeTarget "GN_ACR_SDK_64" */;
+			buildPhases = (
+				4229B23F17FA566F00FA84D5 /* Resources */,
+				4229B24917FA566F00FA84D5 /* Sources */,
+				4229B24F17FA566F00FA84D5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GN_ACR_SDK_64;
+			productName = GN_ACR_MobileSDK;
+			productReference = 4229B25A17FA566F00FA84D5 /* GN_ACR_SDK_64.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GN_ACR_SDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* GN_ACR_SDK */,
+				4229B23E17FA566F00FA84D5 /* GN_ACR_SDK_64 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				889BC0BF14CDD54C00458EBC /* Icon-72.png in Resources */,
+				889BC0C014CDD54C00458EBC /* Icon-Small-50.png in Resources */,
+				889BC0C114CDD54C00458EBC /* Icon-Small.png in Resources */,
+				889BC0C214CDD54C00458EBC /* Icon-Small@2x.png in Resources */,
+				889BC0C314CDD54C00458EBC /* icon.png in Resources */,
+				889BC0C414CDD54C00458EBC /* Icon@2x.png in Resources */,
+				5B623E1C1562E6340078A15B /* SettingsController.xib in Resources */,
+				5B623E211562E7820078A15B /* GN_ACR_SDKViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4229B23F17FA566F00FA84D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4229B24017FA566F00FA84D5 /* MainWindow.xib in Resources */,
+				4229B24117FA566F00FA84D5 /* Icon-72.png in Resources */,
+				4229B24217FA566F00FA84D5 /* Icon-Small-50.png in Resources */,
+				4229B24317FA566F00FA84D5 /* Icon-Small.png in Resources */,
+				4229B24417FA566F00FA84D5 /* Icon-Small@2x.png in Resources */,
+				4229B24517FA566F00FA84D5 /* icon.png in Resources */,
+				4229B24617FA566F00FA84D5 /* Icon@2x.png in Resources */,
+				4229B24717FA566F00FA84D5 /* SettingsController.xib in Resources */,
+				4229B24817FA566F00FA84D5 /* GN_ACR_SDKViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* GN_ACR_SDKAppDelegate.m in Sources */,
+				5B623E1B1562E6340078A15B /* SettingsController.m in Sources */,
+				5B623E1F1562E7550078A15B /* GN_ACR_SDKViewController.m in Sources */,
+				5B05F28A16682F9800210508 /* GnCircularBuffer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4229B24917FA566F00FA84D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4229B24A17FA566F00FA84D5 /* main.m in Sources */,
+				4229B24B17FA566F00FA84D5 /* GN_ACR_SDKAppDelegate.m in Sources */,
+				4229B24C17FA566F00FA84D5 /* SettingsController.m in Sources */,
+				4229B24D17FA566F00FA84D5 /* GN_ACR_SDKViewController.m in Sources */,
+				4229B24E17FA566F00FA84D5 /* GnCircularBuffer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GN_ACR_SDK_Prefix.pch;
+				INFOPLIST_FILE = "GN_ACR_SDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = GN_ACR_SDK;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7 armv7s i386";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GN_ACR_SDK_Prefix.pch;
+				INFOPLIST_FILE = "GN_ACR_SDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = GN_ACR_SDK;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s i386";
+			};
+			name = Release;
+		};
+		4229B25817FA566F00FA84D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GN_ACR_SDK_Prefix.pch;
+				INFOPLIST_FILE = "GN_ACR_SDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = GN_ACR_SDK_64;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 x86_64";
+			};
+			name = Debug;
+		};
+		4229B25917FA566F00FA84D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GN_ACR_SDK_Prefix.pch;
+				INFOPLIST_FILE = "GN_ACR_SDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = GN_ACR_SDK_64;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 x86_64";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "GN_ACR_SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4229B25717FA566F00FA84D5 /* Build configuration list for PBXNativeTarget "GN_ACR_SDK_64" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4229B25817FA566F00FA84D5 /* Debug */,
+				4229B25917FA566F00FA84D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GN_ACR_SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

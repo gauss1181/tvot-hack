@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['imageartistitemcount',['imageArtistItemCount',['../group___link.html#a5d5308d2b0cfb859aeefcbbb59eb8da4',1,'GnLink']]],
+  ['imageitemcount',['imageItemCount',['../group___link.html#a8b5c81e271903f12e240c6781f9fcce0',1,'GnLink']]],
+  ['ingest_3aerror_3a',['ingest:error:',['../group___local_f_p.html#a4f655d204029d1c98d99c1e3f9bd8316',1,'GnFPCache']]],
+  ['init',['init',['../group__manager.html#a552ca2b734380cf62d1b815e15f479e4',1,'GnLocaleSetting']]],
+  ['initializesdk_3a',['initializeSDK:',['../group__manager.html#a0d1f2a1b30ed4082d023a467606ec0bd',1,'GnSdkManager']]],
+  ['initwithaudioconfig_3a',['initWithAudioConfig:',['../group__ios.html#a635736a9fd59818c9c154c6ce834c97e',1,'GnAudioSourceiOSMic']]],
+  ['initwithaudioconfig_3aerror_3a',['initWithAudioConfig:error:',['../group__ios.html#a0c50924b0a276cd644fafba8f5fd0e46',1,'GnAudioSourceiOSMic']]],
+  ['initwithaudiosourcetype_3asamplerate_3aformat_3anumchannels_3a',['initWithAudioSourceType:sampleRate:format:numChannels:',['../group__acr.html#a8a13c0b5ae084c7ad8268f77a1994d02',1,'GnAcrAudioConfig']]],
+  ['initwithclientid_3aclientidtag_3aappversion_3aregistrationtype_3aerror_3a',['initWithClientId:clientIdTag:appVersion:registrationType:error:',['../group__manager.html#aa73c5e516ac83c0f20cdf2d3e6cf915c',1,'GnUser']]],
+  ['initwithid_3aidtag_3asourcetype_3a',['initWithId:idTag:sourceType:',['../group__manager.html#a27c0ad18f702f13df8c7410982c87921',1,'GnID']]],
+  ['initwithid_3atag_3aidsource_3a',['initWithID:tag:idSource:',['../group__metadata.html#a4eccc12857b292fc343d89378ce7e19a',1,'GnMetadataObject']]],
+  ['initwithlicense_3aerror_3a',['initWithLicense:error:',['../group__manager.html#a5ec81b0d2583f2bf1335c27ed98b9196',1,'GnSdkManager']]],
+  ['initwithmetadataobject_3auser_3aerror_3a',['initWithMetadataObject:user:error:',['../group___link.html#a2f6153734b7e159ddf845a9a2ae0ace9',1,'GnLink']]],
+  ['initwithregion_3alanguage_3adescriptor_3a',['initWithRegion:language:descriptor:',['../group__manager.html#a81dd3184f6edbb0d44cdfe8c2f1d2714',1,'GnLocaleSetting']]],
+  ['initwithserializedlocale_3a',['initWithSerializedLocale:',['../group__manager.html#a631aee7df718572208a93f89b61b41b0',1,'GnLocale']]],
+  ['initwithserializeduser_3aerror_3a',['initWithSerializedUser:error:',['../group__manager.html#aeca961974a8eabda05e408ba42b7e493',1,'GnUser']]],
+  ['initwithtype_3avalue_3amessage_3aerror_3a',['initWithType:value:message:error:',['../group__acr.html#a1a767ace33669251f164108159ae94af',1,'GnAcrStatus']]],
+  ['initwithuser_3aerror_3a',['initWithUser:error:',['../group__acr.html#a7b57f4dbf7b2e2d007424ee4de70a86e',1,'GnACR::initWithUser:error:()'],['../group__epg.html#a75b167dc1b7ef288b536b547ab8e5ab6',1,'GnEpg::initWithUser:error:()'],['../group__music_i_d.html#a230815dcbf4e61fecc281ec928578ac9',1,'GnMusicID::initWithUser:error:()'],['../group__video.html#a12bc9c7dff9b59fd560902b36a761d08',1,'GnVideo::initWithUser:error:()']]],
+  ['initwithuser_3alocaletype_3alocalesetting_3a',['initWithUser:localetype:localeSetting:',['../group__manager.html#a1266a63a59a7b329dc787da4d800e10c',1,'GnLocale']]],
+  ['issdkinitialized_3a',['isSDKInitialized:',['../group__manager.html#a3ff611feef70220bc17938751f48651f',1,'GnSdkManager']]]
+];
