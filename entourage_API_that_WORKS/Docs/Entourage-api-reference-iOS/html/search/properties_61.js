@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['acrmatches',['acrMatches',['../group__metadata.html#ab0a6434e0055eea1f3f3e2406fa621dd',1,'GnResult']]],
+  ['actualposition',['actualPosition',['../group___acr_metadata.html#a7cfcd277230fc5dd51671fc04fa1731e',1,'GnAcrMatch']]],
+  ['adjustedposition',['adjustedPosition',['../group___acr_metadata.html#ad54ab451c6106f26a2c4d584b70e5c45',1,'GnAcrMatch']]],
+  ['albums',['albums',['../group__metadata.html#a8f8dea28488236ec1708d7437c563ec4',1,'GnResult::albums()'],['../group___audio_metadata.html#a3c5547f4726a5fa87561ad141bbe90f3',1,'GnTrack::albums()']]],
+  ['alternate',['alternate',['../group___audio_metadata.html#a808af8f537a88139479b2a94e30dde9c',1,'GnContributor']]],
+  ['artist',['artist',['../group___audio_metadata.html#ab71bacf1f5f9e77e41b0722c8ed0042b',1,'GnAlbum::artist()'],['../group___audio_metadata.html#a09d9c5fb01941fca6627045ed0e4e757',1,'GnTrack::artist()']]],
+  ['artisttype1',['artistType1',['../group___audio_metadata.html#a2658c2a65fe2fc5e66b927fb0953c463',1,'GnContributor::artistType1()'],['../group___audio_metadata.html#a408616eed24f9bef5483a13aeb3b3062',1,'GnCredit::artistType1()']]],
+  ['artisttype2',['artistType2',['../group___audio_metadata.html#a8b4e5ffd620469ed52e45db9af8d71e2',1,'GnContributor::artistType2()'],['../group___audio_metadata.html#ae39c23194fff639e59d3be61f85c71d2',1,'GnCredit::artistType2()']]],
+  ['aspectratio',['aspectRatio',['../group___video_metadata.html#aeb679dca4ce91a9388a10f8d701dae75',1,'GnVideoFeature::aspectRatio()'],['../group___video_metadata.html#acaa74000e37a05c6a7044f1ef42450e9',1,'GnVideoProduct::aspectRatio()']]],
+  ['aspectratiotype',['aspectRatioType',['../group___video_metadata.html#a117a8dbce022dcd19deef910e554faab',1,'GnVideoFeature::aspectRatioType()'],['../group___video_metadata.html#a6d3291a59f4ddf4b5a7be981d53a5f74',1,'GnVideoProduct::aspectRatioType()']]],
+  ['audience',['audience',['../group___video_metadata.html#ab0b7b97ab0e6338034ba92b3bfb9410f',1,'GnVideoSeason::audience()'],['../group___video_metadata.html#ad2b2d1b225e53de6815e471ee574eb78',1,'GnVideoSeries::audience()'],['../group___video_metadata.html#a8ee677751e7294392764531cd1248dc9',1,'GnVideoWork::audience()']]],
+  ['audioconfig',['audioConfig',['../group__acr.html#a79f23588926f5b328c5bf320b36dade5',1,'GnACR']]],
+  ['audiodelegate',['audioDelegate',['../group__ios.html#a813c20d2ee15cb48c7dee9522a29a0ec',1,'GnAudioSourceiOSMic']]],
+  ['audiosourcetype',['audioSourceType',['../group__acr.html#aa3f1493da5f1d5a4f6021cdaf46d452f',1,'GnAcrAudioConfig']]],
+  ['audioworks',['audioWorks',['../group___audio_metadata.html#ac5e834f14746267ae76671a2b4466d13',1,'GnAlbum::audioWorks()'],['../group___audio_metadata.html#a1a2be0054373f622b582e0c50be917c7',1,'GnTrack::audioWorks()']]],
+  ['avwork',['avWork',['../group___acr_metadata.html#a81cf8c0dc4b583a4d2ffc8ff0921b761',1,'GnAcrMatch::avWork()'],['../group___epg_metadata.html#ae3afbd38e20aef84be2f271d7ecbbe17',1,'GnTvProgram::avWork()']]]
+];

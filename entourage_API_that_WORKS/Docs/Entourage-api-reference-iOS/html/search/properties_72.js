@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['rangeend',['rangeEnd',['../group__metadata.html#aba74fced6ac044f5a8899c801db3e934',1,'GnResult']]],
+  ['rangesize',['rangeSize',['../group__epg.html#ab95f936f5c6e8da15d565d1ccd211ebe',1,'GnEpg::rangeSize()'],['../group__music_i_d.html#ac86130587ad215d2fe1316e44bc061fe',1,'GnMusicID::rangeSize()'],['../group__video.html#a1ca682482e97447aef3d0535b75a2467',1,'GnVideo::rangeSize()']]],
+  ['rangestart',['rangeStart',['../group__epg.html#a36cae14ffcab5249570b827b39892581',1,'GnEpg::rangeStart()'],['../group__metadata.html#a981f818b63beecb18a50296aa44b961a',1,'GnResult::rangeStart()'],['../group__music_i_d.html#a75cd5f82f9839f1d56e6b302c1cb967b',1,'GnMusicID::rangeStart()'],['../group__video.html#a03195475830d7946e8ee6761f3946b4e',1,'GnVideo::rangeStart()']]],
+  ['rangetotal',['rangeTotal',['../group__metadata.html#a3fc34f933feca6cbce0ba9c4aa9a7b76',1,'GnResult']]],
+  ['ratingdescription',['ratingDescription',['../group___video_metadata.html#a5741cdcdfac5628e110509c6d598e320',1,'GnVideoRating']]],
+  ['ratings',['ratings',['../group___video_metadata.html#a6057e2a940805b0af2569966e4a6de21',1,'GnVideoFeature::ratings()'],['../group___video_metadata.html#aa994c33c3ccadd7d34f5e536928af520',1,'GnVideoProduct::ratings()'],['../group___video_metadata.html#a599ba335d14e0276e169c5f58ee58db9',1,'GnVideoSeason::ratings()'],['../group___video_metadata.html#ae12c177a84c71881358b703fde061d7f',1,'GnVideoSeries::ratings()'],['../group___video_metadata.html#ab31f6d3c8e8925e295b09f480cdc28f6',1,'GnVideoWork::ratings()']]],
+  ['reason',['reason',['../group___video_metadata.html#aea09fb8b0b921675e048c4ecccb0d353',1,'GnVideoRating']]],
+  ['region',['region',['../group__manager.html#a0930cdb8c5b13c425561170e471bf951',1,'GnLocaleSetting::region()'],['../group___video_metadata.html#a6527bf2e7d2b5f0a15d6d6fbb2f5773d',1,'GnVideoLayer::region()'],['../group___video_metadata.html#a03a98230880a03204069217f8b21e7f1',1,'GnVideoProduct::region()']]],
+  ['regional',['regional',['../group___audio_metadata.html#ac2a13e0fd2125c6c1977fbeea2e36df2',1,'GnContributor::regional()'],['../group___audio_metadata.html#af3c833a1db98cf4987ffe31ea532a09a',1,'GnCredit::regional()']]],
+  ['regionallocal',['regionalLocal',['../group___audio_metadata.html#a35fccc9e815154fb6ebfd71b56298e6d',1,'GnContributor']]],
+  ['regioncode',['regionCode',['../group___video_metadata.html#ae5ba9f44a09e9b65f2c3983f6ea4efea',1,'GnVideoLayer']]],
+  ['regiondescription',['regionDescription',['../group___video_metadata.html#ab16254b9637d83dbc45a88001c40065e',1,'GnVideoRegion']]],
+  ['reputation',['reputation',['../group___video_metadata.html#aec53c9afb8ffdccd602789727a400ce5',1,'GnVideoSeason::reputation()'],['../group___video_metadata.html#a620c93f4e13cd3a0ac0c28ca047d9013',1,'GnVideoSeries::reputation()'],['../group___video_metadata.html#a8d1be0d5c3b48863af85b5f248da103d',1,'GnVideoWork::reputation()']]],
+  ['resultdelegate',['resultDelegate',['../group__acr.html#a14a1fe41af5d7a09f2fe9111cc7903d9',1,'GnACR']]],
+  ['resulttype',['resultType',['../group__metadata.html#a7661d4c382fc77771e5aed279bc75d67',1,'GnResult']]],
+  ['returnsingleresult',['returnSingleResult',['../group__music_i_d.html#a473789f1e13ec3129abd3ab609d476a8',1,'GnMusicID']]],
+  ['revisioncheck',['revisionCheck',['../group__music_i_d.html#a27565b95e079dad82d9b7fbc624c1a36',1,'GnMusicID']]],
+  ['role',['role',['../group___audio_metadata.html#a16751c9dae741b28974906072f2e68b1',1,'GnCredit::role()'],['../group___video_metadata.html#a1728d462fb2092b1bd4c24ddd4a5e11c',1,'GnVideoContributor::role()'],['../group___video_metadata.html#af1f9bba26d02d8ace87222bdc2c49423',1,'GnVideoCredit::role()']]],
+  ['rolebilling',['roleBilling',['../group___audio_metadata.html#a9b752b2a6527157dcdfefe932ea1fd0f',1,'GnCredit::roleBilling()'],['../group___video_metadata.html#a8d2d563244238c0647dc4b6caf8d60c5',1,'GnVideoContributor::roleBilling()'],['../group___video_metadata.html#aa57fcc802c9dc4d50672d207c34eceb5',1,'GnVideoCredit::roleBilling()']]],
+  ['rolecategory',['roleCategory',['../group___audio_metadata.html#a3f69a8525faf2f7e99b40e1fd6609888',1,'GnCredit::roleCategory()'],['../group___video_metadata.html#a44e19b901d158420ab67fc1ef28bf9b1',1,'GnVideoContributor::roleCategory()'],['../group___video_metadata.html#afc6ae3501c2c43995d1790a73e743355',1,'GnVideoCredit::roleCategory()']]]
+];

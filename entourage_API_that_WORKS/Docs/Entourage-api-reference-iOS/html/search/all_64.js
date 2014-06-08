@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['data',['data',['../interface_gn_custom_data.html#adb58d3623976c4b554eba569f48410a8',1,'GnCustomData']]],
+  ['dataid',['dataID',['../interface_gn_custom_data.html#a3a79d8d7420502a1e0964f34787605d2',1,'GnCustomData']]],
+  ['dateend',['dateEnd',['../group___epg_metadata.html#ae04d78c67a2419c5861c4e890fbfeb05',1,'GnTvAiring']]],
+  ['dateoriginalrelease',['dateOriginalRelease',['../group___video_metadata.html#a479da4bc8c1c96083e1d9cb9c2a14e3f',1,'GnVideoProduct::dateOriginalRelease()'],['../group___video_metadata.html#a21143bdfc61c420e2b31e2a6bd2715db',1,'GnVideoSeason::dateOriginalRelease()'],['../group___video_metadata.html#ab7a7ce2ab7be81d1cd5ac8264211d124',1,'GnVideoSeries::dateOriginalRelease()'],['../group___video_metadata.html#a8caafabefff898763087f281e0376b08',1,'GnVideoWork::dateOriginalRelease()']]],
+  ['daterelease',['dateRelease',['../group___video_metadata.html#a5c2417ac67ddf4fcd581bbbbfb4a1a01',1,'GnVideoProduct']]],
+  ['datestart',['dateStart',['../group___epg_metadata.html#ae87dfea610d01add68052aa2b3469b65',1,'GnTvAiring']]],
+  ['deathdate',['deathDate',['../group___audio_metadata.html#a0cebbc5fabaa2b9b6ec209f5ccc0914c',1,'GnContributor::deathDate()'],['../group___video_metadata.html#af8a5ecfe76053262a974b8b87eb4455b',1,'GnVideoContributor::deathDate()']]],
+  ['deathplace',['deathPlace',['../group___audio_metadata.html#a4534a9dc8008c38fb884447dfebd1059',1,'GnContributor::deathPlace()'],['../group___video_metadata.html#a502ac8ef95989ad206813ecfd2ba16a0',1,'GnVideoContributor::deathPlace()']]],
+  ['defaultlocaleepg',['defaultLocaleEPG',['../group__manager.html#ae0da95f1ca285e4b34e4bb8a8653c181',1,'GnSdkManager']]],
+  ['defaultlocalemusic',['defaultLocaleMusic',['../group__manager.html#a3802c97c34899c535fa02d562c25573d',1,'GnSdkManager']]],
+  ['defaultlocalevideo',['defaultLocaleVideo',['../group__manager.html#a8aac1765afbcb7cdd967c4f9c9fbb4c8',1,'GnSdkManager']]],
+  ['delegate',['delegate',['../group__video.html#a7558d9f44f584f8359c31d215915d963',1,'GnVideo']]],
+  ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]],
+  ['descriptor',['descriptor',['../group__manager.html#a554e6850bfc4e2cc44fa881660129c65',1,'GnLocaleSetting']]],
+  ['disablecache',['disableCache',['../group__video.html#a98bbfd222d312389888b878cd05ad33e',1,'GnVideo']]],
+  ['disablelogging_3aerror_3a',['disableLogging:error:',['../group__manager.html#a1e4d73e6a3e045e51eb642ece428e9c8',1,'GnLogs']]],
+  ['discnumber',['discNumber',['../group___audio_metadata.html#a5cb08a55b12fa628770b45ab0b038822',1,'GnAlbum']]],
+  ['discoverseed',['discoverSeed',['../group___audio_metadata.html#a12139403583175e626ef129913f8d958',1,'GnAlbum::discoverSeed()'],['../group___audio_metadata.html#a6ca29a3b969e9d51fa25e00c098e9adb',1,'GnAudioWork::discoverSeed()'],['../group___audio_metadata.html#a65e84e4b5ddd9f878341642adcd80536',1,'GnTrack::discoverSeed()']]],
+  ['discs',['discs',['../group___video_metadata.html#a901ca416377467afa2f15ddaa2a5f3de',1,'GnVideoProduct']]],
+  ['display',['display',['../group___audio_metadata.html#a6700f1100f18265eec2a67a46e476728',1,'GnLanguage::display()'],['../group___audio_metadata.html#a347ea884726d1a97312027ef857835f8',1,'GnName::display()'],['../group___audio_metadata.html#a42e8662aaa3014179d3071c040b59728',1,'GnTitle::display()'],['../group___video_metadata.html#a44e0295958775ff2a3f66103db2eb107',1,'GnVideoLanguage::display()'],['../group___video_metadata.html#af920e7c8a8c08f1968d81a0f34c933b4',1,'GnVideoName::display()'],['../group___video_metadata.html#aedbdf5d61b191393148e4220afb21662',1,'GnVideoTitle::display()']]],
+  ['displaylanguage',['displayLanguage',['../group___audio_metadata.html#a224f581f7f80df329b711e8ef32d0822',1,'GnName::displayLanguage()'],['../group___audio_metadata.html#a5dcdb5025de7a1eeaf6870c00efa2c8e',1,'GnTitle::displayLanguage()'],['../group___video_metadata.html#a8f809173f082f7f5dc07d2bcd7511a66',1,'GnVideoName::displayLanguage()']]],
+  ['domanuallookup',['doManualLookup',['../group__acr.html#a46aabd1c4e26c00599fcb90f55e1f991',1,'GnACR']]],
+  ['duration',['duration',['../group___epg_metadata.html#ac728a100d16d090d3404493ebb08026e',1,'GnTvAiring::duration()'],['../group___video_metadata.html#a5f1fc0f03d51673ce813284205700048',1,'GnVideoChapter::duration()'],['../group___video_metadata.html#a464baba778caba2aa1c2fd48dd3ab4ba',1,'GnVideoFeature::duration()'],['../group___video_metadata.html#a9379bf56032009d7cfe14500a72ea3a0',1,'GnVideoProduct::duration()'],['../group___video_metadata.html#a1cf1fd6253938dfa50061ea25f556f89',1,'GnVideoSeason::duration()'],['../group___video_metadata.html#a8527fbb596863cea4be097f9291526ec',1,'GnVideoSeries::duration()'],['../group___video_metadata.html#a5d9aca901edef241fb307a44ff93ad8a',1,'GnVideoWork::duration()']]],
+  ['durationunit',['durationUnit',['../group___epg_metadata.html#a6b4e59dfbd7223093e17b8a809ee1965',1,'GnTvAiring']]],
+  ['durationunits',['durationUnits',['../group___video_metadata.html#a74601050ebacf9f1aaedce0a5f079581',1,'GnVideoChapter::durationUnits()'],['../group___video_metadata.html#a4db4b3bdad9b14b81d0929bde0724913',1,'GnVideoFeature::durationUnits()'],['../group___video_metadata.html#a0fba2d16a0f9608c080032d412ad3c98',1,'GnVideoProduct::durationUnits()'],['../group___video_metadata.html#aea34a95abb6d13d708e1d23d5c84a101',1,'GnVideoSeason::durationUnits()'],['../group___video_metadata.html#ae6b6e868f7a3f3f59fe69bd47c2f02d7',1,'GnVideoSeries::durationUnits()'],['../group___video_metadata.html#ab27dfe41af39c8818e6c07d07af28d1f',1,'GnVideoWork::durationUnits()']]]
+];
